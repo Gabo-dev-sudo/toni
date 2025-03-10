@@ -21,7 +21,7 @@ header{
     box-shadow: 0px 5px 15px;
     justify-content: center;
     align-items: center;
-    gap: 444px;
+    justify-content: space-around;
 }
 
 .logos{
