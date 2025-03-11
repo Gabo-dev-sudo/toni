@@ -163,7 +163,7 @@ article{
 
     header nav ul{
         display: flex;
-        gap: 100px;
+        gap: 10%;
     }
 
     .section1{
