@@ -166,6 +166,10 @@ article{
         gap: 10%;
     }
 
+    header nav li{
+        text-align: center;
+    }
+
     .section1{
         width: 100%;
         flex-direction: column;
