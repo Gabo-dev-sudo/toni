@@ -153,7 +153,7 @@ article{
     box-shadow: 0px 8px 10px rgba(167,33,33,1);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1080px) {
 
     header{
         z-index: 999;
