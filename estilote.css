@@ -325,7 +325,7 @@ article{
 
 .horarios img{
     border-radius: 20px;
-    width: 350px;
+    width: 300px;
     box-shadow: 5px 5px 15px red;
     transition: .3s;
 }
