@@ -17,10 +17,10 @@ header{
     position: fixed;
     backdrop-filter: blur(20px);
     display: flex;
-    box-shadow: 0px 5px 15px;
     align-items: center;
     justify-content: space-between;
     z-index: 999;
+    box-shadow: 0px 5px 15px;
 }
 
 .logos{
@@ -43,18 +43,27 @@ header nav ul{
 
 header nav li{
     list-style: none;
-    background: linear-gradient(70deg, rgba(209,166,166,1) 0%, rgba(167,33,33,1) 53%);
-    border-radius: 5px;
     padding: 10px;
 }
 
+header nav li:hover{
+    border-style: solid;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-color: yellow;
+    transition:.3s;
+}
+
 header nav li a{
-    color: black;
+    color: white;
     text-decoration: none;
+    transition: .3s;
+    font-size: 20px;
 }
 
 header nav li a:hover{
-    color:rgb(242, 180, 66);
+    transition: .3s;
 }
 
 article{
@@ -67,6 +76,7 @@ article{
     border-radius: 170px;
     margin: 0 20px;
     box-shadow: 0px 5px 15px;
+    transition: .3s;
 }
 
 .section1 img:hover{
@@ -75,10 +85,12 @@ article{
 }
 
 .section1{
+    background-color: transparent;
     display: flex;
     width: 100%;
-    height: 73%;
+    height: 600px;
     align-items: center;
+    box-shadow: 0px 5px 15px;
 }
 
 .section1 h1{
@@ -97,17 +109,18 @@ article{
     color: black;   
 }
 
+.section2{
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    justify-items: center;
+    align-content: center;
+}
+
 .MMA{
     text-align: center;
     width: 85%;
     color: white;
-}
-
-.section2{
-    width: 100%;
-    height: 73%;
-    justify-items: center;
-    align-content: center;
 }
 
 .MMA h3{
@@ -119,13 +132,13 @@ article{
 }
 
 .section3{
-    width: 100%;
-    height: 73%;
-    background-color:black;
+    background: black;
+    height: 500px;
     display: flex;
     justify-content: center;
     justify-content: space-around;
     align-items: center;
+    padding: 30px;
 }
 
 .section3 div{
@@ -134,6 +147,8 @@ article{
     background-color: rgb(242, 180, 66);
     padding: 25px;
     border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(167,33,33,1);
+    transition: .3s;
 }
 
 .section3 h3{
@@ -147,78 +162,324 @@ article{
 }
 
 .section3 div:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition-duration: .3s;
-    box-shadow: 0px 8px 10px rgba(167,33,33,1);
 }
 
-@media (max-width: 1080px) {
+.section4{
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    justify-items: center;
+    align-content: center;
+}
 
-    header{
-        z-index: 999;
-        display: flex;
-        flex-direction: column;
-        padding: 0px 0px 10px 0px;
-    }
+.entrenadores{
+    width: 85%;
+    color: white;
+    text-align: center;
+}
 
-    header nav ul{
-        display: flex;
-        gap: 10%;
-    }
+.entrenadores h3{
+    font-size: 35px;
+}
 
-    header nav li{
-        text-align: center;
-    }
+.entrenadores p{
+    font-size: 20px;
+}
 
-    .section1{
-        width: 100%;
-        flex-direction: column;
-    }
+.section5{
+    background-color: black;
+    width: 100%;
+}
 
-    .section1 img{
-        margin-top: 5%;
-        width: 90%;
-    }
+.tony{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction:row-reverse;
+}
 
-    .eslogan{
-        justify-items: center;
-        margin-bottom: 25px;
-    }
+.tony img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(167,33,33,1);
+}
 
-    .section1 h1{
-        font-size: 100px;
-    }
+.tony div{
+    justify-items: center;
+    color: white;
+    transition: .3s;
+}
 
-    .section1 p{
-        padding: 35px;
-        font-size: 40px;
-        text-align: center;
-        width: 70%;
-    }
+.tony div:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
 
-    .section3{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.tony p{
+    width: 50%;
+    color: white;
+}
 
-    .section3 div{
-        margin-top: 30px;
-        width: 60%;
-        height: 100%;
-    }
+.tony b{
+    color: rgba(167,33,33,1);
+    font-size: 30px;
+}
 
-    .section3 h3{
-        font-size: 35px;
-        margin-bottom: 15px;
-        text-align: center;
-    }
+.fer{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
 
-    .section3 li{
-        font-size: 30px;
-        margin-bottom: 15px;
-        color: white;
-    }    
+.fer img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(167,33,33,1);
+}
 
+.fer div{
+    justify-items: center;
+    color: white;
+    transition: .3s;
+}
+
+.fer div:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.fer p{
+    width: 50%;
+    color: white;
+}
+
+.fer b{
+    color: rgba(167,33,33,1);
+    font-size: 30px;
+}
+
+.section6{
+    background-color: transparent;
+    align-content: center;
+    justify-items: center;;
+    width: 100%;
+    height: 400px;
+}
+
+.titulo{
+    width: 85%;
+}
+
+.titulo h3{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.titulo p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.amm{
+    padding-top: 30px;
+    background-color: black;
+    justify-items: center;
+}
+
+.informacion{
+    width: 80%;
+    justify-items: center;
+}
+
+.informacion img{
+    width: 200px;
+}
+
+.informacion h3{
+    font-size: 35px;
+    color: red;
+}
+
+.informacion p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.horarios{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.horarios img{
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 5px 5px 15px red;
+    transition: .3s;
+}
+
+.horarios img:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.division{
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+}
+
+.jj{
+    padding-top: 30px;
+    background-color:black;
+    justify-items: center;
+}
+
+.informacion2{
+    width: 80%;
+    justify-items: center;
+}
+
+.informacion2 img{
+    width: 200px;
+}
+
+.informacion2 h3{
+    font-size: 35px;
+    color: red;
+}
+
+.informacion2 p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.horarios2{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.horarios2 img{
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 5px 5px 15px red;
+    transition: .3s;
+}
+
+.horarios2 img:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.bk{
+    padding-top: 30px;
+    background-color:black;
+    justify-items: center;
+}
+
+.informacion3{
+    width: 80%;
+    justify-items: center;
+}
+
+.informacion3 img{
+    width: 200px;
+}
+
+.informacion3 h3{
+    font-size: 35px;
+    color: red;
+}
+
+.informacion3 p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.horarios3{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.horarios3 img{
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 5px 5px 15px red;
+    transition: .3s;
+}
+
+.horarios3 img:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.mut{
+    padding-top: 30px;
+    background-color:black;
+    justify-items: center;
+}
+
+.informacion4{
+    width: 80%;
+    justify-items: center;
+}
+
+.informacion4 img{
+    width: 300px;
+    position: relative;
+    right: -70px;
+}
+
+.informacion4 h3{
+    font-size: 35px;
+    color: red;
+}
+
+.informacion4 p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.horarios4{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.horarios4 img{
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 5px 5px 15px red;
+    transition: .3s;
+}
+
+.horarios4 img:hover{
+    transform: scale(1.05);
+    transition: .3s;
 }
