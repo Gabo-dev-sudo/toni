@@ -317,15 +317,17 @@ article{
 
 .horarios{
     width: 100%;
-    height: 400px;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-items: center;
     justify-content: space-around;
     padding-bottom: 30px;
 }
 
 .horarios img{
     border-radius: 20px;
-    width: 300px;
+    width: 200px;
     box-shadow: 5px 5px 15px red;
     transition: .3s;
 }
