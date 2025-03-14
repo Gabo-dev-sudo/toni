@@ -13,7 +13,7 @@ body{
 
 .logos img{
     margin-left: 35px;
-    width: 80px;
+    width: 90px;
 }
 
 .boxlineas{
@@ -21,10 +21,10 @@ body{
 }
 
 .boxlineas div{
-    background-color: black;
-    width: 20px;
-    height: 2px;
-    margin: 2px;
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    margin: 3px;
 }
 
 #chekin{
@@ -38,7 +38,11 @@ nav{
 @media(max-width:1000px){
 
     header{
-        background-color: grey;
+        z-index: 1;
+        width: 100%;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        position: fixed;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -46,10 +50,10 @@ nav{
 
     nav{
         display: none;
-        background-color: yellow;
+        background-color: black;
         position: absolute;
         width: 100%;
-        top: 83px;
+        top: 94px;
     }
 
     nav ul{
@@ -58,11 +62,22 @@ nav{
     }
 
     nav ul li{
-        margin-bottom: 15px;
+        margin-top: 15px;
     }
 
     nav ul li a{
         text-decoration: none;
+        color: white;
+        font-size: 20px;
+        transition: all .3s;
+    }
+
+    nav ul li a:hover{
+        color: rgb(242, 180, 66);
+    }
+
+    nav ul li:nth-child(4){
+        margin-bottom: 15px ;
     }
 
     .boxlineas{
@@ -80,10 +95,15 @@ nav{
 @media(min-width:1001px){
 
     header{
-        background-color: red;
+        z-index: 1;
+        width: 100%;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        position: fixed;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        box-shadow: 0px 5px 15px black;
     }
 
     nav{
@@ -92,6 +112,7 @@ nav{
 
     nav ul{
         display: flex;
+        padding: 10px;
     }
 
     nav ul li{
@@ -100,14 +121,21 @@ nav{
     }
 
     nav ul li a{
+        color: white;
         text-decoration: none;
         font-size: 20px;
         margin-right: 40px;
-        transition: all .3s;
+        padding: 5px;
+        transition: .3s;
     }
 
     nav ul li a:hover{
-        color: yellow;
+        border-style: solid;
+        border-color: rgb(242, 180, 66);
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        transition: .3s;
     }
 }
 
