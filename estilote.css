@@ -11,59 +11,104 @@ body{
     background-attachment: fixed;
 }
 
-header{
-    margin: 0%;
-    width: 100%;
-    position: fixed;
-    backdrop-filter: blur(20px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 999;
-    box-shadow: 0px 5px 15px;
-}
-
-.logos{
-    display: flex;
-    margin-left: 50px;
-}
-
 .logos img{
+    margin-left: 35px;
     width: 80px;
 }
 
-header nav{
-    margin-right: 50px;
+.boxlineas{
+    display: none;
 }
 
-header nav ul{
-    display: flex;
-    gap: 40px;
+.boxlineas div{
+    background-color: black;
+    width: 20px;
+    height: 2px;
+    margin: 2px;
 }
 
-header nav li{
-    list-style: none;
-    padding: 10px;
+#chekin{
+    display: none;
 }
 
-header nav li:hover{
-    border-style: solid;
-    border-left: none;
-    border-top: none;
-    border-right: none;
-    border-color: yellow;
-    transition:.3s;
+nav{
+    display: none;
 }
 
-header nav li a{
-    color: white;
-    text-decoration: none;
-    transition: .3s;
-    font-size: 20px;
+@media(max-width:800px){
+
+    header{
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav{
+        display: none;
+        background-color: yellow;
+        position: absolute;
+        width: 100%;
+        top: 83px;
+    }
+
+    nav ul{
+        text-align: center;
+        list-style: none;
+    }
+
+    nav ul li{
+        margin-bottom: 15px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+    }
+
+    .boxlineas{
+        display: block;
+        position: relative;
+        right: 0%;
+        margin-right: 35px;
+    }
+
+    #chekin:checked~nav{
+        display: block;
+    }
 }
 
-header nav li a:hover{
-    transition: .3s;
+@media(min-width:801px){
+
+    header{
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    nav ul li{
+        list-style: none;
+        margin-right: 20px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        margin-right: 40px;
+        transition: all .3s;
+    }
+
+    nav ul li a:hover{
+        color: yellow;
+    }
 }
 
 article{
