@@ -22,9 +22,9 @@ body{
 
 .boxlineas div{
     background-color: white;
-    width: 30px;
-    height: 3px;
-    margin: 3px;
+    width: 60px;
+    height: 6px;
+    margin: 6px;
 }
 
 #chekin{
@@ -48,12 +48,17 @@ nav{
         justify-content: space-between;
     }
 
+    .logos img{
+        width: 140px;
+        margin-left: 70px;
+    }
+
     nav{
         display: none;
         background-color: black;
         position: absolute;
         width: 100%;
-        top: 94px;
+        top: 144px;
     }
 
     nav ul{
@@ -62,13 +67,13 @@ nav{
     }
 
     nav ul li{
-        margin-top: 15px;
+        margin-top: 30px;
     }
 
     nav ul li a{
         text-decoration: none;
         color: white;
-        font-size: 20px;
+        font-size: 40px;
         transition: all .3s;
     }
 
@@ -77,14 +82,14 @@ nav{
     }
 
     nav ul li:nth-child(4){
-        margin-bottom: 15px ;
+        margin-bottom: 30px ;
     }
 
     .boxlineas{
         display: block;
         position: relative;
         right: 0%;
-        margin-right: 35px;
+        margin-right: 70px;
     }
 
     #chekin:checked~nav{
