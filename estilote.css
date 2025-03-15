@@ -25,6 +25,7 @@ body{
     width: 60px;
     height: 6px;
     margin: 6px;
+    transition: .3s;
 }
 
 #chekin{
@@ -94,6 +95,25 @@ nav{
 
     #chekin:checked~nav{
         display: block;
+    }
+
+    #chekin:checked~.boxlineas div:nth-child(1){
+        position: relative;
+        right: -1px;
+        rotate: 45deg;
+        transition: .3s;
+    }
+
+    #chekin:checked~.boxlineas div:nth-child(2){
+        position: relative;
+        right: 1px;
+        top: -11px;
+        rotate: -45deg;
+        transition: .3s
+    }
+
+    #chekin:checked~.boxlineas div:nth-child(3){
+        opacity: 0%;
     }
 }
 
