@@ -170,11 +170,14 @@ nav{
     }
 
     .section3 div h3{
-        font-size: 880%;
+        font-size: 500%;
+        background-color: blue;
+        width: 100% !important;
+        height: 100%;
     }
 
     .section3 div li{
-        font-size: 200%;
+        font-size: 400%;
     }
 }
 
