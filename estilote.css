@@ -11,6 +11,10 @@ body{
     background-attachment: fixed;
 }
 
+.logos{
+    display: flex;
+}
+
 .logos img{
     margin-left: 35px;
     width: 90px;
@@ -22,7 +26,7 @@ body{
 
 .boxlineas div{
     background-color: white;
-    width: 60px;
+    width: 35px;
     height: 6px;
     margin: 6px;
     transition: .3s;
@@ -36,7 +40,7 @@ nav{
     display: none;
 }
 
-@media(max-width:1000px){
+@media(max-width:1000px){ 
 
     header{
         z-index: 1;
@@ -44,14 +48,14 @@ nav{
         background-color: transparent;
         backdrop-filter: blur(20px);
         position: fixed;
-        display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
+        display: flex;
     }
 
     .logos img{
-        width: 140px;
-        margin-left: 70px;
+        width: 18%;
+        margin-left: 7%;
     }
 
     nav{
@@ -59,7 +63,7 @@ nav{
         background-color: black;
         position: absolute;
         width: 100%;
-        top: 144px;
+        top: 80px;
     }
 
     nav ul{
@@ -90,7 +94,7 @@ nav{
         display: block;
         position: relative;
         right: 0%;
-        margin-right: 70px;
+        margin-right: 2%;
     }
 
     #chekin:checked~nav{
