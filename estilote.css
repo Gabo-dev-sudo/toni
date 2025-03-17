@@ -212,12 +212,12 @@ nav{
     }
 
     .tony b{
-        font-size: 400% !important;
+        font-size: 300% !important;
         text-align: center;
     }
 
     .tony p{
-        font-size: 200%;
+        font-size: 400%;
     }
 
     .fer{
@@ -231,12 +231,12 @@ nav{
     }
 
     .fer b{
-        font-size: 400% !important;
+        font-size: 300% !important;
         text-align: center;
     }
 
     .fer p{
-        font-size: 200%;
+        font-size: 400%;
     }
 }
 
@@ -419,6 +419,7 @@ article{
     align-items: center;
     justify-content: space-around;
     flex-direction:row-reverse;
+
 }
 
 .tony img{
@@ -471,7 +472,7 @@ article{
     transition: .3s;
 }
 
-.fer div:hover{
+.fer img:hover{
     transform: scale(1.05);
     transition: .3s;
 }
