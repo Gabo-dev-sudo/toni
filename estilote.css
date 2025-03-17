@@ -212,12 +212,12 @@ nav{
     }
 
     .tony b{
-        font-size: 300% !important;
+        font-size: 200% !important;
         text-align: center;
     }
 
     .tony p{
-        font-size: 400%;
+        font-size: 300%;
     }
 
     .fer{
@@ -231,12 +231,12 @@ nav{
     }
 
     .fer b{
-        font-size: 300% !important;
+        font-size: 200% !important;
         text-align: center;
     }
 
     .fer p{
-        font-size: 400%;
+        font-size: 600%;
     }
 }
 
