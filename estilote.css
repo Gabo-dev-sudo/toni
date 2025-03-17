@@ -168,9 +168,11 @@ nav{
         height: 100% !important;
         margin-top: 15%;
         margin-bottom: 15%;
+        box-shadow: 10px 10px 20pxrgba(167,33,33,1);
     }
 
     .section3 div h3{
+        margin-bottom: 10%;
         font-size: 600%;
         width: 100% !important;
         height: 100%;
@@ -178,6 +180,63 @@ nav{
 
     .section3 div li{
         font-size: 300%;
+    }
+
+    .section4{
+        width: 100%;
+        height: 2000px !important;
+        justify-content: center;
+    }
+
+    .entrenadores h3{
+        font-size: 400% !important;
+        margin-bottom: 5%;
+    }
+
+    .entrenadores p{
+       font-size: 250% !important;
+    }
+
+    .coaches{
+        width: 100%;
+    }
+
+    .tony{
+        flex-direction: column !important;
+        margin-bottom: 15%;
+    }
+
+    .tony img{
+        width: 600px !important;
+        height: 600px !important;
+    }
+
+    .tony b{
+        font-size: 400% !important;
+        text-align: center;
+    }
+
+    .tony p{
+        font-size: 200%;
+    }
+
+    .fer{
+        flex-direction: column !important;
+        margin-bottom: 15%;
+    }
+
+    .fer img{
+        width: 600px !important;
+        height: 600px !important;
+    }
+
+    .fer b{
+        font-size: 400% !important;
+        text-align: center;
+    }
+
+    .fer p{
+        font-size: 200%;
     }
 }
 
@@ -367,6 +426,7 @@ article{
     height: 300px;
     border-radius: 50%;
     box-shadow: 5px 5px 15px rgba(167,33,33,1);
+    transition: .3s;
 }
 
 .tony div{
@@ -375,7 +435,7 @@ article{
     transition: .3s;
 }
 
-.tony div:hover{
+.tony img:hover{
     transform: scale(1.05);
     transition: .3s;
 }
@@ -383,6 +443,7 @@ article{
 .tony p{
     width: 50%;
     color: white;
+    text-align: center;
 }
 
 .tony b{
@@ -418,6 +479,7 @@ article{
 .fer p{
     width: 50%;
     color: white;
+    text-align: center;
 }
 
 .fer b{
