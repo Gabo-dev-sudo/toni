@@ -268,10 +268,12 @@ nav{
     
     .informacion img{
         width: 80% !important;
+        margin-left: 5%;
     }
     
     .informacion h3{
         font-size: 300% !important;
+        text-align: center;
     }
     
     .informacion p{
@@ -281,6 +283,7 @@ nav{
     }
     
     .horarios{
+        margin-top: 10%;
         width: 100%;
         flex-direction: column;
         padding-bottom: 5% !important;
@@ -307,6 +310,7 @@ nav{
     
     .informacion2 h3{
         font-size: 300% !important;
+        text-align: center;
     }
     
     .informacion2 p{
@@ -315,6 +319,7 @@ nav{
     }
     
     .horarios2{
+        margin-top: 10%;
         width: 100%;
         height: 100% !important;
         padding-bottom: 5% !important;
@@ -350,6 +355,7 @@ nav{
     }
     
     .horarios3{
+        margin-top: 10% !important;
         width: 100%;
         height: 100% !important;
         padding-bottom: 5% !important;
@@ -365,6 +371,7 @@ nav{
     }
 
     .informacion4{
+        margin-top: 10% !important;
         width: 100% !important;
         justify-content: center;
     }
