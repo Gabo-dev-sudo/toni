@@ -209,6 +209,7 @@ nav{
     .tony img{
         width: 600px !important;
         height: 600px !important;
+        margin-bottom: 10% !important;
     }
 
     .tony b{
@@ -218,6 +219,7 @@ nav{
 
     .tony p{
         font-size: 300%;
+        width: 85% !important;
     }
 
     .fer{
@@ -228,6 +230,7 @@ nav{
     .fer img{
         width: 600px !important;
         height: 600px !important;
+        margin-bottom: 10% !important;
     }
 
     .fer b{
@@ -237,6 +240,7 @@ nav{
 
     .fer p{
         font-size: 300%;
+        width: 85% !important;
     }
 }
 
