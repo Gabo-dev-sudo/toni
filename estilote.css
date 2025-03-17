@@ -242,6 +242,158 @@ nav{
         font-size: 300%;
         width: 85% !important;
     }
+
+    .section6{
+        width: 100%;
+        height: 2000px !important;
+        justify-content: center;
+    }
+
+    .titulo h3{
+        font-size: 400% !important;
+        margin-bottom: 5%;
+    }
+
+    .titulo p{
+       font-size: 250% !important;
+    }
+
+    .amm{
+        padding-top: 5% !important;
+    }
+
+    .informacion{
+        width: 100% !important;
+    }
+    
+    .informacion img{
+        width: 80% !important;
+    }
+    
+    .informacion h3{
+        font-size: 300% !important;
+    }
+    
+    .informacion p{
+        font-size: 200% !important;
+        margin-bottom: 5%;
+        width: 85%;
+    }
+    
+    .horarios{
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 5% !important;
+    }
+    
+    .horarios img{
+        border-radius: 20px;
+        width: 80% !important;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+
+    .jj{
+        padding-top: 5% !important;
+    }
+
+    .informacion2{
+        width: 100% !important;
+    }
+    
+    .informacion2 img{
+        width: 100% !important;
+    }
+    
+    .informacion2 h3{
+        font-size: 300% !important;
+    }
+    
+    .informacion2 p{
+        font-size: 200% !important;
+        margin-bottom: 5%;
+    }
+    
+    .horarios2{
+        width: 100%;
+        height: 100% !important;
+        padding-bottom: 5% !important;
+    }
+    
+    .horarios2 img{
+        border-radius: 20px;
+        width: 100% !important;
+    }
+
+    .bk{
+        padding-top: 5% !important;
+    }
+
+    .informacion3{
+        width: 100% !important;
+        justify-content: center;
+    }
+    
+    .informacion3 img{
+        width: 25% !important;
+        margin-left: 35%;
+    }
+    
+    .informacion3 h3{
+        font-size: 300% !important;
+        text-align: center;
+    }
+    
+    .informacion3 p{
+        font-size: 200% !important;
+        margin-bottom: 5%;
+    }
+    
+    .horarios3{
+        width: 100%;
+        height: 100% !important;
+        padding-bottom: 5% !important;
+    }
+    
+    .horarios3 img{
+        border-radius: 20px;
+        width:100% !important;
+    }
+
+    .mut{
+        padding-top: 5% !important;
+    }
+
+    .informacion4{
+        width: 100% !important;
+        justify-content: center;
+    }
+    
+    .informacion4 img{
+        width: 50% !important;
+        margin-left: 25%;
+    }
+    
+    .informacion4 h3{
+        font-size: 300% !important;
+        text-align: center;
+    }
+    
+    .informacion4 p{
+        font-size: 200% !important;
+        margin-bottom: 5%;
+    }
+    
+    .horarios4{
+        width: 100%;
+        height: 100% !important;
+        padding-bottom: 5% !important;
+    }
+    
+    .horarios4 img{
+        border-radius: 20px;
+        width:100% !important;
+    }
 }
 
 @media(min-width:1001px){
@@ -495,7 +647,7 @@ article{
 .section6{
     background-color: transparent;
     align-content: center;
-    justify-items: center;;
+    justify-items: center;
     width: 100%;
     height: 400px;
 }
@@ -545,17 +697,14 @@ article{
 
 .horarios{
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-items: center;
     justify-content: space-around;
     padding-bottom: 30px;
 }
 
 .horarios img{
     border-radius: 20px;
-    width: 200px;
+    width: 400px;
     box-shadow: 5px 5px 15px red;
     transition: .3s;
 }
@@ -566,7 +715,7 @@ article{
 }
 
 .division{
-    background-color: transparent;
+    color: transparent;
     width: 100%;
     height: 400px;
 }
