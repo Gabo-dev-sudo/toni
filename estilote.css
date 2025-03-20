@@ -42,6 +42,7 @@ nav{
 
 @media(max-width:1000px){ 
 
+    /*Barra de navegacion responsive*/
     header{
         z-index: 1;
         width: 100%;
@@ -87,7 +88,7 @@ nav{
         color: rgb(242, 180, 66);
     }
 
-    nav ul li:nth-child(4){
+    nav ul li:nth-child(3){
         margin-bottom: 60px ;
     }
 
@@ -121,25 +122,36 @@ nav{
         opacity: 0%;
     }
 
+    /*Pantalla 1 Inicio responsive*/
     .section1{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5%;
-        box-shadow: none !important;
+        flex-direction: column-reverse;
     }
 
-    .section1 img{
-        width: 90% !important;
+    .section1 .fondo{
+        width: 150%;
+        position: relative;
+        left: -25%;
+    }
+    
+    .fondo{
+        mask-image: linear-gradient(to top, black, transparent);
+    }
+
+    .redes{
+        position: relative;
+        left: -15%;
+        margin-top: 5%;
     }
 
     .section1 h1{
-        font-size: 880% !important;
-    } 
+        position: relative;
+        left: -14%;
+    }
 
     .section1 p{
-        font-size: 200%;
-        text-align: center;
-        margin-bottom: 5% !important;
+        position: relative;
+        left: -13%;
+        margin-bottom: 10%;
     }
 
     .section2{
@@ -168,7 +180,7 @@ nav{
         height: 100% !important;
         margin-top: 15%;
         margin-bottom: 15%;
-        box-shadow: 10px 10px 20pxrgba(167,33,33,1);
+        box-shadow: 10px 10px 20px rgba(167,33,33,1);
     }
 
     .section3 div h3{
@@ -243,6 +255,7 @@ nav{
         width: 85% !important;
     }
 
+    /*Pantalla 2 Servicios Responsive*/
     .section6{
         width: 100%;
         height: 2000px !important;
@@ -401,6 +414,10 @@ nav{
         border-radius: 20px;
         width:100% !important;
     }
+
+    /*Pantalla 3 Productos Responsive*/
+
+
 }
 
 @media(min-width:1001px){
@@ -455,47 +472,101 @@ article{
     justify-content: center;
 }
 
-.section1 img{
-    width: 50%;
-    border-radius: 170px;
-    box-shadow: 5px 5px 15px black;
-    transition: .3s;
-}
-
-.section1 img:hover{
-    transform: scale(1.05);
-    transition-duration: .3s;
+/*Pantalla 1 Inicio*/
+.section1 .fondo img{
+    width: 150%;
+    mask-image: linear-gradient(to right, black 20%, transparent);
 }
 
 .section1{
     position: relative;
-    background-color: transparent;
+    background-color: black;
     display: flex;
     width: 100%;
     align-items: center;
     box-shadow: 0px 5px 15px;
+    margin-top: 10px;
 }
 
-.section1 h1{
-    font-size: 70px;
+.eslogan{
+    justify-items: right;
+    margin-right: 
+}
+
+.section1 .redes{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    margin-right: 10%;
+}
+
+.redes .face img{
+   width: 20%;
+   transition: .3s;
+   border-radius: 20px;
+}
+
+.face img:hover{
+    background-color: white;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.redes .insta img{
+    width: 20%;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.insta img:hover{
+    background-color: white;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.redes .whats img{
+    width: 22%;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+.whats img:hover{
+    background-color: white;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.redes a{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.section1 .eslogan h1{
+    font-size: 60px;
     font-style: italic;
     margin-bottom: 40px;
     text-align: center;
     color: white;
+    margin-right: 5%;
 }
 
-.section1 p{
+.section1 .eslogan p{
     background-color: rgb(242, 180, 66);
     padding: 15px;
     border-radius: 20px;
-    margin: 0px 20px;
     color: black;   
+    text-align: center;
+    width: 60%;
+    margin-right: 5%;
 }
 
 .section2{
     background-color: transparent;
     width: 100%;
-    height: 400px;
+    height: 600px;
     justify-items: center;
     align-content: center;
 }
@@ -552,7 +623,7 @@ article{
 .section4{
     background-color: transparent;
     width: 100%;
-    height: 400px;
+    height: 600px;
     justify-items: center;
     align-content: center;
 }
@@ -627,6 +698,7 @@ article{
     height: 300px;
     border-radius: 50%;
     box-shadow: 5px 5px 15px rgba(167,33,33,1);
+    transition: .3s;
 }
 
 .fer div{
@@ -651,12 +723,13 @@ article{
     font-size: 30px;
 }
 
+/*Pantalla 2 Servicios*/
 .section6{
     background-color: transparent;
     align-content: center;
     justify-items: center;
     width: 100%;
-    height: 400px;
+    height: 600px;
 }
 
 .titulo{
@@ -679,6 +752,20 @@ article{
     padding-top: 30px;
     background-color: black;
     justify-items: center;
+}
+
+.amm a{
+    background-color: red;
+    padding: 20px 35px 20px 35px;
+    color: black;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.amm a:hover{
+    color: white;
+    transition: .3s;
 }
 
 .informacion{
@@ -733,6 +820,20 @@ article{
     justify-items: center;
 }
 
+.jj a{
+    background-color: red;
+    padding: 20px 35px 20px 35px;
+    color: black;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.jj a:hover{
+    color: white;
+    transition: .3s;
+}
+
 .informacion2{
     width: 80%;
     justify-items: center;
@@ -778,6 +879,20 @@ article{
     padding-top: 30px;
     background-color:black;
     justify-items: center;
+}
+
+.bk a{
+    background-color: red;
+    padding: 20px 35px 20px 35px;
+    color: black;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.bk a:hover{
+    color: white;
+    transition: .3s;
 }
 
 .informacion3{
@@ -827,6 +942,20 @@ article{
     justify-items: center;
 }
 
+.mut a{
+    background-color: red;
+    padding: 20px 35px 20px 35px;
+    color: black;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.mut a:hover{
+    color: white;
+    transition: .3s;
+}
+
 .informacion4{
     width: 80%;
     justify-items: center;
@@ -869,3 +998,833 @@ article{
     transform: scale(1.05);
     transition: .3s;
 }
+
+
+
+
+/* Pantalla 3 Productos*/
+.section7{
+    background-color: transparent;
+    justify-items: center;
+    height: 550px;
+    align-content: center;
+}
+
+.productos{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;   
+}
+
+.productos .descripcion{
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.productos h4{
+    font-family: Impact, Haettenschweiler;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.productos h5{
+    font-size: 20px;
+}
+
+.productos p{
+    color: white;
+}
+
+.productos a{
+    color: black;
+    text-decoration: none;
+    background-color: yellowgreen;
+    text-align: center;
+    padding: 20px;
+    width: 150px;
+    border-radius: 40px;
+    margin-top: 10%;
+    transition: .3s;
+}
+
+.productos a:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+
+
+.guantes{
+    justify-items: center;
+}
+
+.guantes .iconomenu{
+    width: 85%;
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.iconomenu:hover{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.guantes .iconomenu div{
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+
+}
+
+.iconomenu div:nth-child(2){
+    position: relative;
+    right: 6px;
+    bottom: -10px;
+    rotate: 40deg;
+
+}
+
+.iconomenu div:nth-child(3){
+    position: relative;
+    right: -8px;
+    rotate: -45deg;
+    bottom: -4px;
+}
+
+#chek{
+    display: none;
+}
+
+#chek:checked~.menuguantes{
+    display: block;
+}
+
+#chek:checked~.iconomenu{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.menuguantes{
+    background-color: black;
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.menuguantes img{
+    width: 35%;
+    margin-bottom: 15%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+.menuguantes div{
+    display: flex;
+}
+
+
+
+
+
+
+.espinilleras{
+    justify-items: center;
+}
+
+.espinilleras .iconomenu2{
+    width: 85%;
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.iconomenu2:hover{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+.iconomenu2:hover{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.espinilleras .iconomenu2 div{
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+.iconomenu2 div:nth-child(2){
+    position: relative;
+    right: 6px;
+    bottom: -10px;
+    rotate: 40deg;
+
+}
+
+.iconomenu2 div:nth-child(3){
+    position: relative;
+    right: -8px;
+    rotate: -45deg;
+    bottom: -4px;
+}
+
+#chek2{
+    display: none;
+}
+
+#chek2:checked~.menuespinilleras{
+    display: block;
+}
+
+#chek2:checked~.iconomenu2{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.menuespinilleras{
+    background-color: black;
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menuespinilleras img{
+    width: 35%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+.menuespinilleras div{
+    display: flex;
+}
+
+
+
+
+.caretas{
+    justify-items: center;
+}
+
+.caretas .iconomenu3{
+    width: 85%;
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.iconomenu3:hover{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+.caretas .iconomenu3 div{
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+.iconomenu3 div:nth-child(2){
+    position: relative;
+    right: 6px;
+    bottom: -10px;
+    rotate: 40deg;
+
+}
+
+.iconomenu3 div:nth-child(3){
+    position: relative;
+    right: -8px;
+    rotate: -45deg;
+    bottom: -4px;
+}
+
+#chek3{
+    display: none;
+}
+
+#chek3:checked~.menucaretas{
+    display: block;
+}
+
+#chek3:checked~.iconomenu3{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.menucaretas{
+    background-color: black;
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.menucaretas img{
+    width: 35%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+.menucaretas div{
+    display: flex;
+}
+
+
+
+
+
+.bucales{
+    justify-items: center;
+}
+
+.bucales .iconomenu4{
+    width: 85%;
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.iconomenu4:hover{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+.bucales .iconomenu4 div{
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+.iconomenu4 div:nth-child(2){
+    position: relative;
+    right: 6px;
+    bottom: -10px;
+    rotate: 40deg;
+
+}
+
+.iconomenu4 div:nth-child(3){
+    position: relative;
+    right: -8px;
+    rotate: -45deg;
+    bottom: -4px;
+}
+
+#chek4{
+    display: none;
+}
+
+#chek4:checked~.menubucales{
+    display: block;
+}
+
+#chek4:checked~.iconomenu4{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.menubucales{
+    background-color: black;
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.menubucales img{
+    width: 35%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+.menubucales div{
+    display: flex;
+}
+
+
+
+
+
+.vendajes{
+    justify-items: center;
+}
+
+.vendajes .iconomenu5{
+    width: 85%;
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.iconomenu5:hover{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+.vendajes .iconomenu5 div{
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+.iconomenu5 div:nth-child(2){
+    position: relative;
+    right: 6px;
+    bottom: -10px;
+    rotate: 40deg;
+
+}
+
+.iconomenu5 div:nth-child(3){
+    position: relative;
+    right: -8px;
+    rotate: -45deg;
+    bottom: -4px;
+}
+
+#chek5{
+    display: none;
+}
+
+#chek5:checked~.menuvendajes{
+    display: block;
+}
+
+#chek5:checked~.iconomenu5{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.menuvendajes{
+    background-color: black;
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.menuvendajes img{
+    width: 35%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+.menuvendajes div{
+    display: flex;
+}
+
+
+
+.futbol{
+    justify-items: center;
+}
+
+.futbol .iconomenu6{
+    width: 85%;
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.iconomenu6:hover{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+.futbol .iconomenu6 div{
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+.iconomenu6 div:nth-child(2){
+    position: relative;
+    right: 6px;
+    bottom: -10px;
+    rotate: 40deg;
+
+}
+
+.iconomenu6 div:nth-child(3){
+    position: relative;
+    right: -8px;
+    rotate: -45deg;
+    bottom: -4px;
+}
+
+#chek6{
+    display: none;
+}
+
+#chek6:checked~.menufutbol{
+    display: block;
+}
+
+#chek6:checked~.iconomenu6{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.menufutbol{
+    background-color: black;
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.menufutbol img{
+    width: 35%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+.menufutbol div{
+    display: flex;
+}
+
+
+
+.ropa{
+    justify-items: center;
+}
+
+.ropa .iconomenu7{
+    width: 85%;
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.iconomenu7:hover{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+.ropa .iconomenu7 div{
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+.iconomenu7 div:nth-child(2){
+    position: relative;
+    right: 6px;
+    bottom: -10px;
+    rotate: 40deg;
+
+}
+
+.iconomenu7 div:nth-child(3){
+    position: relative;
+    right: -8px;
+    rotate: -45deg;
+    bottom: -4px;
+}
+
+#chek7{
+    display: none;
+}
+
+#chek7:checked~.menuropa{
+    display: block;
+}
+
+#chek7:checked~.iconomenu7{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.menuropa{
+    background-color: black;
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.menuropa img{
+    width: 35%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+.menuropa div{
+    display: flex;
+}
+
+
+
+
+.conchas{
+    justify-items: center;
+}
+
+.conchas .iconomenu8{
+    width: 85%;
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.iconomenu8:hover{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+.conchas .iconomenu8 div{
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+.iconomenu8 div:nth-child(2){
+    position: relative;
+    right: 6px;
+    bottom: -10px;
+    rotate: 40deg;
+
+}
+
+.iconomenu8 div:nth-child(3){
+    position: relative;
+    right: -8px;
+    rotate: -45deg;
+    bottom: -4px;
+}
+
+#chek8{
+    display: none;
+}
+
+#chek8:checked~.menuconchas{
+    display: block;
+}
+
+#chek8:checked~.iconomenu8{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.menuconchas{
+    background-color: black;
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.menuconchas img{
+    width: 35%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+.menuconchas div{
+    display: flex;
+}
+
+
+
+.accesorios{
+    justify-items: center;
+}
+
+.accesorios .iconomenu9{
+    width: 85%;
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.iconomenu9:hover{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+.accesorios .iconomenu9 div{
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+.iconomenu9 div:nth-child(2){
+    position: relative;
+    right: 6px;
+    bottom: -10px;
+    rotate: 40deg;
+
+}
+
+.iconomenu9 div:nth-child(3){
+    position: relative;
+    right: -8px;
+    rotate: -45deg;
+    bottom: -4px;
+}
+
+#chek9{
+    display: none;
+}
+
+#chek9:checked~.menuaccesorios{
+    display: block;
+}
+
+#chek9:checked~.iconomenu9{
+    background-color: rgb(190, 36, 36);
+    transform: scale(1.1);
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.menuaccesorios{
+    background-color: black;
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.menuaccesorios img{
+    width: 35%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+.menuaccesorios div{
+    display: flex;
+}
+
+
+
