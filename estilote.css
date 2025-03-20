@@ -128,9 +128,9 @@ nav{
     }
 
     .section1 .fondo{
-        width: 150%;
+        width: 50%;
         position: relative;
-        left: -25%;
+        
     }
     
     .fondo{
@@ -479,7 +479,6 @@ article{
 }
 
 .section1{
-    position: relative;
     background-color: black;
     display: flex;
     width: 100%;
@@ -490,7 +489,6 @@ article{
 
 .eslogan{
     justify-items: right;
-    margin-right: 
 }
 
 .section1 .redes{
