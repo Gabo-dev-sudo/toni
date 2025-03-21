@@ -124,35 +124,95 @@ nav{
 
     /*Pantalla 1 Inicio responsive*/
     .section1{
+        margin-top: 3.8%;
+        background-color: black;
+        display: flex;
         flex-direction: column-reverse;
     }
 
-    .section1 .fondo{
-        width: 50%;
-        position: relative;
-        
-    }
-    
-    .fondo{
+    .section1 img{
+        width: 100%;
         mask-image: linear-gradient(to top, black, transparent);
     }
 
-    .redes{
-        position: relative;
-        left: -15%;
+    .section1 .eslogan{
+        justify-items: center;
+    }
+
+    .eslogan .redes{
+        width: 85%;
+        display: flex;
+        text-align: center;
         margin-top: 5%;
+        margin-bottom: 5%;
+        position: relative;
+        right: -10%;
     }
 
-    .section1 h1{
-        position: relative;
-        left: -14%;
+    .redes a{
+        color: white;
+        text-decoration: none;
     }
 
-    .section1 p{
-        position: relative;
-        left: -13%;
-        margin-bottom: 10%;
+    .redes .face img{
+        width: 20%;
+        transition: .3s;
+        border-radius: 25px;
+        mask-image: none;
     }
+     
+    .face img:hover{
+         background-color: white;
+         transform: scale(1.1);
+         transition: .3s;
+    }
+     
+    .redes .insta img{
+         width: 20%;
+         transition: .3s;
+         border-radius: 15px;
+         mask-image: none;
+    }
+     
+    .insta img:hover{
+         background-color: white;
+         transform: scale(1.1);
+         transition: .3s;
+    }
+     
+    .redes .whats img{
+         width: 25%;
+         transition: .3s;
+         border-radius: 25px;
+         mask-image: none;
+    }
+     
+    .whats img:hover{
+         background-color: white;
+         transform: scale(1.1);
+         transition: .3s;
+    }
+     
+     .eslogan h1{
+        font-size: 70px;
+        font-style: italic;
+        color: white;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .eslogan p{
+        font-size: 200%;
+        color: white;
+        text-align: center;
+        margin-bottom: 5%;
+        background-color: orange;
+        width: 80%;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+
 
     .section2{
         width: 100%;
@@ -465,6 +525,96 @@ nav{
         border-top: 0;
         transition: .3s;
     }
+
+
+    .section1{
+        margin-top: .7%;
+        background-color: black;
+        display: flex;
+        width: 100%;
+    }
+    
+    .section1 img{
+        width: 55%;
+        mask-image: linear-gradient(to right, black, transparent);
+    }
+    
+    .eslogan{
+        width: 50%;
+        position: relative;
+        justify-items: center;
+    }
+    
+    .redes{
+        display: flex;
+        width: 85%;
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    .redes a{
+        color: white;
+        font-size: 11px;
+        text-decoration: none;
+    }
+    
+    .redes .face img{
+        width: 10%;
+        transition: .3s;
+        border-radius: 25px;
+        mask-image: none;
+    }
+     
+    .face img:hover{
+         background-color: white;
+         transform: scale(1.1);
+         transition: .3s;
+    }
+     
+    .redes .insta img{
+         width: 10%;
+         transition: .3s;
+         border-radius: 15px;
+         mask-image: none;
+    }
+     
+    .insta img:hover{
+         background-color: white;
+         transform: scale(1.1);
+         transition: .3s;
+    }
+     
+    .redes .whats img{
+         width: 15%;
+         transition: .3s;
+         border-radius: 25px;
+         mask-image: none;
+    }
+     
+    .whats img:hover{
+         background-color: white;
+         transform: scale(1.1);
+         transition: .3s;
+    }
+     
+     .eslogan h1{
+        font-size: 70px;
+        font-style: italic;
+        color: white;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .eslogan p{
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        margin-bottom: 5%;
+        background-color: orange;
+        width: 80%;
+        border-radius: 20px;
+        padding: 15px;
+    }
 }
 
 article{
@@ -473,94 +623,6 @@ article{
 }
 
 /*Pantalla 1 Inicio*/
-.section1 .fondo img{
-    width: 150%;
-    mask-image: linear-gradient(to right, black 20%, transparent);
-}
-
-.section1{
-    background-color: black;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    box-shadow: 0px 5px 15px;
-    margin-top: 10px;
-}
-
-.eslogan{
-    justify-items: right;
-}
-
-.section1 .redes{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5%;
-    margin-right: 10%;
-}
-
-.redes .face img{
-   width: 20%;
-   transition: .3s;
-   border-radius: 20px;
-}
-
-.face img:hover{
-    background-color: white;
-    transform: scale(1.1);
-    transition: .3s;
-}
-
-.redes .insta img{
-    width: 20%;
-    transition: .3s;
-    border-radius: 10px;
-}
-
-.insta img:hover{
-    background-color: white;
-    transform: scale(1.1);
-    transition: .3s;
-}
-
-.redes .whats img{
-    width: 22%;
-    transition: .3s;
-    border-radius: 20px;
-}
-
-.whats img:hover{
-    background-color: white;
-    transform: scale(1.1);
-    transition: .3s;
-}
-
-.redes a{
-    color: white;
-    text-align: center;
-    font-size: 10px;
-    text-decoration: none;
-}
-
-.section1 .eslogan h1{
-    font-size: 60px;
-    font-style: italic;
-    margin-bottom: 40px;
-    text-align: center;
-    color: white;
-    margin-right: 5%;
-}
-
-.section1 .eslogan p{
-    background-color: rgb(242, 180, 66);
-    padding: 15px;
-    border-radius: 20px;
-    color: black;   
-    text-align: center;
-    width: 60%;
-    margin-right: 5%;
-}
-
 .section2{
     background-color: transparent;
     width: 100%;
