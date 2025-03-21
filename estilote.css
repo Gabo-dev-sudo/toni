@@ -313,8 +313,8 @@ nav{
     
     .tony{
         background-color: black;
-        width: 1400px !important;
-        height: 1300px !important;
+        width: 700px !important;
+        height: 1100px !important;
         padding: 30px;
         border-radius: 30px;
         text-align: center;
@@ -333,7 +333,7 @@ nav{
     }
     
     .tony div{
-        width: 500px !important;
+        width: 600px !important;
         text-align: center;
         margin-bottom: 40px;
     }
@@ -353,12 +353,15 @@ nav{
         font-size: 250% !important;
         margin-top: 20px;
         color: white;
-    }   
+    }
     
+    
+
+
     .fer{
         background-color: black;
-        width: 1400px !important;
-        height: 1300px !important;
+        width: 700px !important;
+        height: 1100px !important;
         padding: 30px;
         border-radius: 30px;
         text-align: center;
@@ -377,7 +380,7 @@ nav{
     }
     
     .fer div{
-        width: 500px !important;
+        width: 600px !important;
         text-align: center;
         margin-bottom: 40px;
     }
@@ -397,7 +400,9 @@ nav{
         font-size: 250% !important;
         margin-top: 20px;
         color: white;
-    } 
+    }
+    
+     
 
     /*Pantalla 2 Servicios Responsive*/
     .section6{
