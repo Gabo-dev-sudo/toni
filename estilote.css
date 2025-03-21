@@ -11,6 +11,10 @@ body{
     background-attachment: fixed;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .logos{
     display: flex;
 }
@@ -252,67 +256,6 @@ nav{
 
     .section3 div li{
         font-size: 300%;
-    }
-
-    .section4{
-        width: 100%;
-        height: 2000px !important;
-        justify-content: center;
-    }
-
-    .entrenadores h3{
-        font-size: 400% !important;
-        margin-bottom: 5%;
-    }
-
-    .entrenadores p{
-       font-size: 250% !important;
-    }
-
-    .coaches{
-        width: 100%;
-    }
-
-    .tony{
-        flex-direction: column !important;
-        margin-bottom: 15%;
-    }
-
-    .tony img{
-        width: 600px !important;
-        height: 600px !important;
-        margin-bottom: 10% !important;
-    }
-
-    .tony b{
-        font-size: 200% !important;
-        text-align: center;
-    }
-
-    .tony p{
-        font-size: 300%;
-        width: 85% !important;
-    }
-
-    .fer{
-        flex-direction: column !important;
-        margin-bottom: 15%;
-    }
-
-    .fer img{
-        width: 600px !important;
-        height: 600px !important;
-        margin-bottom: 10% !important;
-    }
-
-    .fer b{
-        font-size: 200% !important;
-        text-align: center;
-    }
-
-    .fer p{
-        font-size: 300%;
-        width: 85% !important;
     }
 
     /*Pantalla 2 Servicios Responsive*/
@@ -622,7 +565,6 @@ article{
     justify-content: center;
 }
 
-/*Pantalla 1 Inicio*/
 .section2{
     background-color: transparent;
     width: 100%;
@@ -702,85 +644,112 @@ article{
     font-size: 20px;
 }
 
+
 .section5{
     background-color: black;
+    width: 94%;
+    justify-items: center;
+    padding: 40px;
+}
+
+.coachs{
+    padding: 30px;
     width: 100%;
+    display: flex;
+    gap: 25px;
+    overflow-x: scroll;
+}
+
+.coachs::-webkit-scrollbar{
+    display: none;
 }
 
 .tony{
-    display: flex;
+    background-color: black;
+    width: 350px;
+    height: 450px;
     padding: 30px;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction:row-reverse;
-
+    border-radius: 30px;
+    text-align: center;
+    transition: .3s;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    opacity: .5;
 }
 
-.tony img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    box-shadow: 5px 5px 15px rgba(167,33,33,1);
+.tony:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px red;
     transition: .3s;
+    opacity: 1;
 }
 
 .tony div{
-    justify-items: center;
-    color: white;
-    transition: .3s;
-}
-
-.tony img:hover{
-    transform: scale(1.05);
-    transition: .3s;
-}
-
-.tony p{
-    width: 50%;
-    color: white;
+    width: 300px;
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.tony img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
 }
 
 .tony b{
-    color: rgba(167,33,33,1);
-    font-size: 30px;
+    color: red;
+    font-size: 20px;
 }
+
+.tony p{
+    font-size: 16px;
+    margin-top: 20px;
+    color: white;
+}   
 
 .fer{
-    display: flex;
+    background-color: black;
+    width: 350px;
+    height: 450px;
     padding: 30px;
-    align-items: center;
-    justify-content: space-around;
+    border-radius: 30px;
+    text-align: center;
+    transition: .3s;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    opacity: .5;
 }
 
-.fer img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    box-shadow: 5px 5px 15px rgba(167,33,33,1);
+.fer:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px red;
     transition: .3s;
+    opacity: 1;
 }
 
 .fer div{
-    justify-items: center;
-    color: white;
-    transition: .3s;
-}
-
-.fer img:hover{
-    transform: scale(1.05);
-    transition: .3s;
-}
-
-.fer p{
-    width: 50%;
-    color: white;
+    width: 300px;
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.fer img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
 }
 
 .fer b{
-    color: rgba(167,33,33,1);
-    font-size: 30px;
+    font-size: 20px;
+    color: red;
+}
+
+.fer p{
+    font-size: 16px;
+    margin-top: 20px;
+    color: white;
 }
 
 /*Pantalla 2 Servicios*/
