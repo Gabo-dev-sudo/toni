@@ -296,11 +296,11 @@ nav{
         background-color: black;
         width: 100%;
         justify-items: center;
-        padding: 40px;
+        padding: 40px !important;
     }
     
     .coachs{
-        padding: 30px;
+        padding: 40px !important;
         width: 100%;
         display: flex;
         gap: 25px;
@@ -313,7 +313,7 @@ nav{
     
     .tony{
         background-color: black;
-        width: 800px !important;
+        width: 1000px !important;
         height: 1200px !important;
         padding: 30px;
         border-radius: 30px;
@@ -357,7 +357,7 @@ nav{
     
     .fer{
         background-color: black;
-        width: 800px !important;
+        width: 1000px !important;
         height: 1200px !important;
         padding: 30px;
         border-radius: 30px;
