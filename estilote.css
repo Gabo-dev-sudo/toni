@@ -303,13 +303,30 @@ nav{
         overflow-x: scroll;
         overflow-y: hidden;
         gap: 50px;
-        background-color: blueviolet;
+        background-color: black;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .coachs .tony{
-        background-color: red;
+        background-color: black;
         width: 900px;
         height: 1100px;
+        text-align: center;
+        padding-top: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+        border: 1px solid white;
+        border-radius: 40px;
+        opacity: .5;
+        transition: .3s;
+    }
+
+    .coachs .tony:hover{
+        opacity: 1;
+        transform: scale(1.07);
+        transition: .3s;
+        box-shadow: 5px 5px 15px red;
     }
     
     .coachs .tony div{
@@ -319,12 +336,41 @@ nav{
     .coachs .tony img{
         width: 400px;
         height: 400px;
+        border-radius: 50%;
+        margin-bottom: 20px;
     }
-    
+
+    .coachs .tony b{
+        color: red;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .coachs .tony p{
+        font-size: 40px;
+        text-align: start;
+        color: white;
+    }
+
     .coachs .fer{
-        background-color: pink;
+        background-color: black;
         width: 900px;
         height: 1100px;
+        text-align: center;
+        padding-top: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+        border: 1px solid white;
+        border-radius: 40px;
+        opacity: .5;
+        transition: .3s;
+    }
+
+    .coachs .fer:hover{
+        opacity: 1;
+        transform: scale(1.07);
+        transition: .3s;
+        box-shadow: 5px 5px 15px red;
     }
     
     .coachs .fer div{
@@ -334,7 +380,22 @@ nav{
     .coachs .fer img{
         width: 400px;
         height: 400px;
+        border-radius: 50%;
+        margin-bottom: 20px;
     }
+
+    .coachs .fer b{
+        color: red;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .coachs .fer p{
+        font-size: 40px;
+        text-align: start;
+        color: white;
+    }
+    
 
 
 
