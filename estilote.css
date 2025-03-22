@@ -147,7 +147,7 @@ nav{
         display: flex;
         text-align: center;
         margin-top: 10%;
-        margin-bottom: 15%;
+        margin-bottom: 5%;
         position: relative;
         margin-right: -14%;
     }
@@ -201,14 +201,14 @@ nav{
         font-style: italic;
         color: white;
         text-align: center;
-        margin-bottom: 5%;
+        margin-bottom: 15%;
     }
     
     .eslogan p{
         font-size: 200%;
         color: white;
         text-align: center;
-        margin-bottom: 5%;
+        margin-bottom: 15%;
         background-color: orange;
         width: 80%;
         border-radius: 20px;
@@ -464,9 +464,81 @@ nav{
     }
 
     /*Pantalla 3 Productos Responsive*/
+    .section7{
+        height: 2000px;
+    }
 
+    .guantes .iconomenu{
+        margin-bottom: 15% !important;
+    }
 
+    .guantes .menuguantes{
+        margin-top: -15%;
+    }
 
+    .espinilleras .iconomenu2{
+        margin-bottom: 15% !important;
+    }
+
+    .espinilleras .menuespinilleras{
+        margin-top: -15%;
+    }
+
+    .caretas .iconomenu3{
+        margin-bottom: 15% !important;
+    }
+
+    .caretas .menucaretas{
+        margin-top: -15%;
+    }
+
+    .bucales .iconomenu4{
+        margin-bottom: 15% !important;
+    }
+
+    .bucales .menubucales{
+        margin-top: -15%;
+    }
+
+    .vendajes .iconomenu5{
+        margin-bottom: 15% !important;
+    }
+
+    .vendajes .menuvendajes{
+        margin-top: -15%;
+    }
+
+    .futbol .iconomenu6{
+        margin-bottom: 15% !important;
+    }
+
+    .futbol .menufutbol{
+        margin-top: -15%;
+    }
+
+    .ropa .iconomenu7{
+        margin-bottom: 15% !important;
+    }
+
+    .ropa .menuropa{
+        margin-top: -15%;
+    }
+
+    .conchas .iconomenu8{
+        margin-bottom: 15% !important;
+    }
+
+    .conchas .menuconchas{
+        margin-top: -15%;
+    }
+
+    .accesorios .iconomenu9{
+        margin-bottom: 15% !important;
+    }
+
+    .accesorios .menuaccesorios{
+        margin-top: -15%;
+    }
 }
 
 @media(min-width:1001px){
@@ -1005,7 +1077,7 @@ nav{
 .section7{
     background-color: transparent;
     justify-items: center;
-    height: 2000px;
+    height: 600px;
     align-content: center;
 }
 
@@ -1068,7 +1140,7 @@ nav{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     border-radius: 40px;
     transition: .3s;
 }
@@ -1130,7 +1202,7 @@ nav{
     display: none;
     width: 100%;
     position: relative;
-    margin-top: -15%;
+    margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
 }
@@ -1164,7 +1236,7 @@ nav{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     border-radius: 40px;
     transition: .3s;
 }
@@ -1225,7 +1297,7 @@ nav{
     display: none;
     width: 100%;
     position: relative;
-    margin-top: -15%;
+    margin-top: -5%;
     margin-bottom: 5%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -1258,7 +1330,7 @@ nav{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     border-radius: 40px;
     transition: .3s;
 }
@@ -1323,7 +1395,7 @@ nav{
     display: none;
     width: 100%;
     position: relative;
-    margin-top: -15%;
+    margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
 }
@@ -1356,7 +1428,7 @@ nav{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     border-radius: 40px;
     transition: .3s;
 }
@@ -1418,7 +1490,7 @@ nav{
     display: none;
     width: 100%;
     position: relative;
-    margin-top: -15%;
+    margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
 }
@@ -1451,7 +1523,7 @@ nav{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     border-radius: 40px;
     transition: .3s;
 }
@@ -1513,7 +1585,7 @@ nav{
     display: none;
     width: 100%;
     position: relative;
-    margin-top: -15%;
+    margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
 }
@@ -1545,7 +1617,7 @@ nav{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     border-radius: 40px;
     transition: .3s;
 }
@@ -1607,7 +1679,7 @@ nav{
     display: none;
     width: 100%;
     position: relative;
-    margin-top: -15%;
+    margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
 }
@@ -1639,7 +1711,7 @@ nav{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     border-radius: 40px;
     transition: .3s;
 }
@@ -1700,7 +1772,7 @@ nav{
     display: none;
     width: 100%;
     position: relative;
-    margin-top: -15%;
+    margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
 }
@@ -1732,7 +1804,7 @@ nav{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     border-radius: 40px;
     transition: .3s;
 }
@@ -1793,7 +1865,7 @@ nav{
     display: none;
     width: 100%;
     position: relative;
-    margin-top: -15%;
+    margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
 }
@@ -1824,7 +1896,7 @@ nav{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     border-radius: 40px;
     transition: .3s;
 }
@@ -1885,7 +1957,7 @@ nav{
     display: none;
     width: 100%;
     position: relative;
-    margin-top: -15%;
+    margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
 }
