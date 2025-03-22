@@ -1333,11 +1333,13 @@ nav{
 
 .productos .descripcion{
     flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 .productos h4{
     font-family: Impact, Haettenschweiler;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     margin-bottom: 5%;
 }
