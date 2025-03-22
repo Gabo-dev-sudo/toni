@@ -11,10 +11,6 @@ body{
     background-attachment: fixed;
 }
 
-body::-webkit-scrollbar{
-    display: none;
-}
-
 
 .logos{
     display: flex;
@@ -127,12 +123,14 @@ nav{
         opacity: 0%;
     }
 
+
     /*Pantalla 1 Inicio responsive*/
     .section1{
         margin-top: 3.8%;
         background-color: black;
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
     }
 
     .section1 img{
@@ -148,10 +146,10 @@ nav{
         width: 85%;
         display: flex;
         text-align: center;
-        margin-top: 5%;
+        margin-top: 10%;
         margin-bottom: 5%;
         position: relative;
-        right: -10%;
+        margin-right: -8%;
     }
 
     .redes a{
@@ -198,7 +196,7 @@ nav{
          transition: .3s;
     }
      
-     .eslogan h1{
+    .eslogan h1{
         font-size: 120px;
         font-style: italic;
         color: white;
@@ -220,6 +218,7 @@ nav{
 
 
 
+
     .section2{
         width: 100%;
         height: 2000px !important;
@@ -234,6 +233,9 @@ nav{
     .MMA p{
        font-size: 250% !important;
     }
+    
+
+
 
     .section3{
         height: 100% !important;
@@ -259,6 +261,8 @@ nav{
     .section3 div li{
         font-size: 300%;
     }
+
+
 
 
 
@@ -289,118 +293,13 @@ nav{
     .entrenadores p{
         font-size: 20px;
     }
-
-
-    
-    .section5{
-        background-color: black;
-        width: 100%;
-        justify-items: center;
-        padding: 40px !important;
-    }
-    
-    .coachs{
-        padding: 40px !important;
-        width: 100%;
-        display: flex;
-        gap: 25px;
-        overflow-x: scroll;
-    }
-    
-    .coachs::-webkit-scrollbar{
-        display: none;
-    }
-    
-    .tony{
-        background-color: black;
-        width: 700px !important;
-        height: 1010px !important;
-        padding: 30px;
-        border-radius: 30px;
-        text-align: center;
-        transition: .3s;
-        border-style: solid;
-        border-color: white;
-        border-width: 1px;
-        opacity: .5;
-    }
-    
-    .tony:hover{
-        transform: scale(1.05);
-        box-shadow: 5px 5px 15px red;
-        transition: .3s;
-        opacity: 1;
-    }
-    
-    .tony div{
-        width: 600px !important;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    
-    .tony img{
-        border-radius: 50%;
-        width: 400px !important;
-        height: 400px !important;
-    }
-    
-    .tony b{
-        color: red;
-        font-size: 250% !important;
-    }
-    
-    .tony p{
-        font-size: 250% !important;
-        margin-top: 20px;
-        color: white;
-    }
-    
     
 
 
-    .fer{
-        background-color: black;
-        width: 700px !important;
-        height: 1010px !important;
-        padding: 30px;
-        border-radius: 30px;
-        text-align: center;
-        transition: .3s;
-        border-style: solid;
-        border-color: white;
-        border-width: 1px;
-        opacity: .5;
-    }
+
+
     
-    .fer:hover{
-        transform: scale(1.05);
-        box-shadow: 5px 5px 15px red;
-        transition: .3s;
-        opacity: 1;
-    }
     
-    .fer div{
-        width: 600px !important;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    
-    .fer img{
-        border-radius: 50%;
-        width: 400px !important;
-        height: 400px !important;
-    }
-    
-    .fer b{
-        color: red;
-        font-size: 250% !important;
-    }
-    
-    .fer p{
-        font-size: 250% !important;
-        margin-top: 20px;
-        color: white;
-    }
     
      
 
@@ -572,6 +471,7 @@ nav{
 
 @media(min-width:1001px){
 
+    /*barra de navegacion compu*/
     header{
         z-index: 1;
         width: 100%;
@@ -617,6 +517,9 @@ nav{
     }
 
 
+
+
+    /*Pantalla 1 compu*/
     .section1{
         margin-top: .7%;
         background-color: black;
@@ -727,118 +630,12 @@ nav{
     .entrenadores p{
         font-size: 20px;
     }
-    
-    .section5{
-        background-color: black;
-        width: 94%;
-        justify-items: center;
-        padding: 40px;
-    }
-    
-    .coachs{
-        padding: 30px;
-        width: 100%;
-        display: flex;
-        gap: 25px;
-        overflow-x: scroll;
-    }
-    
-    .coachs::-webkit-scrollbar{
-        display: none;
-    }
-    
-    .tony{
-        background-color: black;
-        width: 350px;
-        height: 450px;
-        padding: 30px;
-        border-radius: 30px;
-        text-align: center;
-        transition: .3s;
-        border-style: solid;
-        border-color: white;
-        border-width: 1px;
-        opacity: .5;
-    }
-    
-    .tony:hover{
-        transform: scale(1.05);
-        box-shadow: 5px 5px 15px red;
-        transition: .3s;
-        opacity: 1;
-    }
-    
-    .tony div{
-        width: 300px;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    
-    .tony img{
-        border-radius: 50%;
-        width: 170px;
-        height: 170px;
-    }
-    
-    .tony b{
-        color: red;
-        font-size: 20px;
-    }
-    
-    .tony p{
-        font-size: 16px;
-        margin-top: 20px;
-        color: white;
-    }   
-    
-    .fer{
-        background-color: black;
-        width: 350px;
-        height: 450px;
-        padding: 30px;
-        border-radius: 30px;
-        text-align: center;
-        transition: .3s;
-        border-style: solid;
-        border-color: white;
-        border-width: 1px;
-        opacity: .5;
-    }
-    
-    .fer:hover{
-        transform: scale(1.05);
-        box-shadow: 5px 5px 15px red;
-        transition: .3s;
-        opacity: 1;
-    }
-    
-    .fer div{
-        width: 300px;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    
-    .fer img{
-        border-radius: 50%;
-        width: 170px;
-        height: 170px;
-    }
-    
-    .fer b{
-        font-size: 20px;
-        color: red;
-    }
-    
-    .fer p{
-        font-size: 16px;
-        margin-top: 20px;
-        color: white;
-    }
-}
 
-article{
-    width: 100%;
-    justify-content: center;
+
+
+
+
+
 }
 
 .section2{
@@ -920,112 +717,15 @@ article{
     font-size: 20px;
 }
 
-.section5{
-    background-color: black;
-    width: 94%;
-    justify-items: center;
-    padding: 40px;
-}
 
-.coachs{
-    padding: 30px;
-    width: 100%;
-    display: flex;
-    gap: 25px;
-    overflow-x: scroll;
-}
 
-.coachs::-webkit-scrollbar{
-    display: none;
-}
 
-.tony{
-    background-color: black;
-    width: 350px;
-    height: 450px;
-    padding: 30px;
-    border-radius: 30px;
-    text-align: center;
-    transition: .3s;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    opacity: .5;
-}
 
-.tony:hover{
-    transform: scale(1.05);
-    box-shadow: 5px 5px 15px red;
-    transition: .3s;
-    opacity: 1;
-}
 
-.tony div{
-    width: 300px;
-    text-align: center;
-    margin-bottom: 40px;
-}
 
-.tony img{
-    border-radius: 50%;
-    width: 170px;
-    height: 170px;
-}
 
-.tony b{
-    color: red;
-    font-size: 20px;
-}
 
-.tony p{
-    font-size: 16px;
-    margin-top: 20px;
-    color: white;
-}   
 
-.fer{
-    background-color: black;
-    width: 350px;
-    height: 450px;
-    padding: 30px;
-    border-radius: 30px;
-    text-align: center;
-    transition: .3s;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    opacity: .5;
-}
-
-.fer:hover{
-    transform: scale(1.05);
-    box-shadow: 5px 5px 15px red;
-    transition: .3s;
-    opacity: 1;
-}
-
-.fer div{
-    width: 300px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.fer img{
-    border-radius: 50%;
-    width: 170px;
-    height: 170px;
-}
-
-.fer b{
-    font-size: 20px;
-    color: red;
-}
-
-.fer p{
-    font-size: 16px;
-    margin-top: 20px;
-    color: white;
-}
 
 /*Pantalla 2 Servicios*/
 .section6{
