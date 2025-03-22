@@ -147,7 +147,7 @@ nav{
         display: flex;
         text-align: center;
         margin-top: 10%;
-        margin-bottom: 5%;
+        margin-bottom: 15%;
         position: relative;
         margin-right: -14%;
     }
@@ -631,11 +631,6 @@ nav{
         font-size: 20px;
     }
 
-
-
-
-
-
 }
 
 .section2{
@@ -1010,7 +1005,7 @@ nav{
 .section7{
     background-color: transparent;
     justify-items: center;
-    height: 550px;
+    height: 2000px;
     align-content: center;
 }
 
@@ -1065,9 +1060,10 @@ nav{
 }
 
 .guantes .iconomenu{
+    color: white;
     width: 85%;
     display: flex;
-    background-color: red;
+    background-color: black;
     padding: 10px;
     flex-direction: column;
     text-align: center;
@@ -1077,14 +1073,18 @@ nav{
     transition: .3s;
 }
 
+.guantes .iconomenu h5{
+    font-size: 40px;
+}
+
 .iconomenu:hover{
-    background-color: rgb(190, 36, 36);
-    transform: scale(1.1);
+    box-shadow: 5px 5px 15px red;
+    transform: scale(1.07);
     transition: .3s;
 }
 
 .guantes .iconomenu div{
-    background-color: black;
+    background-color: white;
     width: 20px;
     height: 3px;
     margin-bottom: 3px;
@@ -1115,7 +1115,11 @@ nav{
 }
 
 #chek:checked~.iconomenu{
-    background-color: rgb(190, 36, 36);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 5px 5px 15px red;
+    background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
@@ -1152,9 +1156,10 @@ nav{
 }
 
 .espinilleras .iconomenu2{
+    color: white;
     width: 85%;
     display: flex;
-    background-color: red;
+    background-color: black;
     padding: 10px;
     flex-direction: column;
     text-align: center;
@@ -1164,21 +1169,18 @@ nav{
     transition: .3s;
 }
 
-.iconomenu2:hover{
-    background-color: rgb(190, 36, 36);
-    transform: scale(1.1);
-    transition: .3s;
+.espinilleras .iconomenu2 h5{
+    font-size: 40px;
 }
 
-
 .iconomenu2:hover{
-    background-color: rgb(190, 36, 36);
-    transform: scale(1.1);
+    box-shadow: 5px 5px 15px red;
+    transform: scale(1.07);
     transition: .3s;
 }
 
 .espinilleras .iconomenu2 div{
-    background-color: black;
+    background-color: white;
     width: 20px;
     height: 3px;
     margin-bottom: 3px;
@@ -1208,7 +1210,11 @@ nav{
 }
 
 #chek2:checked~.iconomenu2{
-    background-color: rgb(190, 36, 36);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 5px 5px 15px red;
+    background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
@@ -1244,9 +1250,10 @@ nav{
 }
 
 .caretas .iconomenu3{
+    color: white;
     width: 85%;
     display: flex;
-    background-color: red;
+    background-color: black;
     padding: 10px;
     flex-direction: column;
     text-align: center;
@@ -1256,18 +1263,25 @@ nav{
     transition: .3s;
 }
 
+.caretas .iconomenu3 h5{
+    font-size: 40px;
+}
+
 .iconomenu3:hover{
-    background-color: rgb(190, 36, 36);
-    transform: scale(1.1);
+    box-shadow: 5px 5px 15px red;
+    transform: scale(1.07);
     transition: .3s;
 }
 
-
 .caretas .iconomenu3 div{
-    background-color: black;
+    background-color: white;
     width: 20px;
     height: 3px;
     margin-bottom: 3px;
+}
+
+.caretas .iconomenu3 h5{
+    font-size: 40px;
 }
 
 .iconomenu3 div:nth-child(2){
@@ -1294,7 +1308,11 @@ nav{
 }
 
 #chek3:checked~.iconomenu3{
-    background-color: rgb(190, 36, 36);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 5px 5px 15px red;
+    background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
@@ -1330,9 +1348,10 @@ nav{
 }
 
 .bucales .iconomenu4{
+    color: white;
     width: 85%;
     display: flex;
-    background-color: red;
+    background-color: black;
     padding: 10px;
     flex-direction: column;
     text-align: center;
@@ -1342,15 +1361,19 @@ nav{
     transition: .3s;
 }
 
+.bucales .iconomenu4 h5{
+    font-size: 40px;
+}
+
 .iconomenu4:hover{
-    background-color: rgb(190, 36, 36);
-    transform: scale(1.1);
+    box-shadow: 5px 5px 15px red;
+    transform: scale(1.07);
     transition: .3s;
 }
 
 
 .bucales .iconomenu4 div{
-    background-color: black;
+    background-color: white;
     width: 20px;
     height: 3px;
     margin-bottom: 3px;
@@ -1380,7 +1403,11 @@ nav{
 }
 
 #chek4:checked~.iconomenu4{
-    background-color: rgb(190, 36, 36);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 5px 5px 15px red;
+    background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
@@ -1416,9 +1443,10 @@ nav{
 }
 
 .vendajes .iconomenu5{
+    color: white;
     width: 85%;
     display: flex;
-    background-color: red;
+    background-color: black;
     padding: 10px;
     flex-direction: column;
     text-align: center;
@@ -1428,15 +1456,19 @@ nav{
     transition: .3s;
 }
 
+.vendajes .iconomenu5 h5{
+    font-size: 40px;
+}
+
 .iconomenu5:hover{
-    background-color: rgb(190, 36, 36);
-    transform: scale(1.1);
+    box-shadow: 5px 5px 15px red;
+    transform: scale(1.05);
     transition: .3s;
 }
 
 
 .vendajes .iconomenu5 div{
-    background-color: black;
+    background-color: white;
     width: 20px;
     height: 3px;
     margin-bottom: 3px;
@@ -1466,7 +1498,11 @@ nav{
 }
 
 #chek5:checked~.iconomenu5{
-    background-color: rgb(190, 36, 36);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 5px 5px 15px red;
+    background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
@@ -1495,14 +1531,16 @@ nav{
 
 
 
+
 .futbol{
     justify-items: center;
 }
 
 .futbol .iconomenu6{
+    color: white;
     width: 85%;
     display: flex;
-    background-color: red;
+    background-color: black;
     padding: 10px;
     flex-direction: column;
     text-align: center;
@@ -1512,15 +1550,19 @@ nav{
     transition: .3s;
 }
 
+.futbol .iconomenu6 h5{
+    font-size: 40px;
+}
+
 .iconomenu6:hover{
-    background-color: rgb(190, 36, 36);
-    transform: scale(1.1);
+    box-shadow: 5px 5px 15px red;
+    transform: scale(1.07);
     transition: .3s;
 }
 
 
 .futbol .iconomenu6 div{
-    background-color: black;
+    background-color: white;
     width: 20px;
     height: 3px;
     margin-bottom: 3px;
@@ -1550,7 +1592,11 @@ nav{
 }
 
 #chek6:checked~.iconomenu6{
-    background-color: rgb(190, 36, 36);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 5px 5px 15px red;
+    background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
@@ -1579,14 +1625,16 @@ nav{
 
 
 
+
 .ropa{
     justify-items: center;
 }
 
 .ropa .iconomenu7{
+    color: white;
     width: 85%;
     display: flex;
-    background-color: red;
+    background-color: black;
     padding: 10px;
     flex-direction: column;
     text-align: center;
@@ -1596,15 +1644,18 @@ nav{
     transition: .3s;
 }
 
+.ropa .iconomenu7 h5{
+    font-size: 40px;
+}
+
 .iconomenu7:hover{
-    background-color: rgb(190, 36, 36);
-    transform: scale(1.1);
+    box-shadow: 5px 5px 15px red;
+    transform: scale(1.07);
     transition: .3s;
 }
 
-
 .ropa .iconomenu7 div{
-    background-color: black;
+    background-color: white;
     width: 20px;
     height: 3px;
     margin-bottom: 3px;
@@ -1634,7 +1685,11 @@ nav{
 }
 
 #chek7:checked~.iconomenu7{
-    background-color: rgb(190, 36, 36);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 5px 5px 15px red;
+    background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
@@ -1669,9 +1724,10 @@ nav{
 }
 
 .conchas .iconomenu8{
+    color: white;
     width: 85%;
     display: flex;
-    background-color: red;
+    background-color: black;
     padding: 10px;
     flex-direction: column;
     text-align: center;
@@ -1681,15 +1737,19 @@ nav{
     transition: .3s;
 }
 
+.conchas .iconomenu8 h5{
+    font-size: 40px;
+}
+
 .iconomenu8:hover{
-    background-color: rgb(190, 36, 36);
-    transform: scale(1.1);
+    box-shadow: 5px 5px 15px red;
+    transform: scale(1.07);
     transition: .3s;
 }
 
 
 .conchas .iconomenu8 div{
-    background-color: black;
+    background-color: white;
     width: 20px;
     height: 3px;
     margin-bottom: 3px;
@@ -1719,7 +1779,11 @@ nav{
 }
 
 #chek8:checked~.iconomenu8{
-    background-color: rgb(190, 36, 36);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 5px 5px 15px red;
+    background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
@@ -1753,9 +1817,10 @@ nav{
 }
 
 .accesorios .iconomenu9{
+    color: white;
     width: 85%;
     display: flex;
-    background-color: red;
+    background-color: black;
     padding: 10px;
     flex-direction: column;
     text-align: center;
@@ -1765,15 +1830,18 @@ nav{
     transition: .3s;
 }
 
+.accesorios .iconomenu9 h5{
+    font-size: 40px;
+}
+
 .iconomenu9:hover{
-    background-color: rgb(190, 36, 36);
-    transform: scale(1.1);
+    box-shadow: 5px 5px 15px red;
+    transform: scale(1.07);
     transition: .3s;
 }
 
-
 .accesorios .iconomenu9 div{
-    background-color: black;
+    background-color: white;
     width: 20px;
     height: 3px;
     margin-bottom: 3px;
@@ -1803,7 +1871,11 @@ nav{
 }
 
 #chek9:checked~.iconomenu9{
-    background-color: rgb(190, 36, 36);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 5px 5px 15px red;
+    background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
