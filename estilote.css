@@ -465,7 +465,7 @@ nav{
 
     /*Pantalla 3 Productos Responsive*/
     .section7{
-        height: 2000px;
+        height: 2000px !important;
     }
 
     .guantes .iconomenu{
@@ -786,6 +786,47 @@ nav{
 
 
 
+
+
+.coachs{
+    background-color: blueviolet;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 25px;
+}
+
+.coachs .tony{
+    background-color: red;
+    width: 350px;
+    height: 450px;
+}
+
+.coachs .tony div{
+    width: 350px;
+}
+
+.coachs .tony img{
+    width: 200px;
+    height: 200px;
+}
+
+.coachs .fer{
+    background-color: pink;
+    width: 350px;
+    height: 450px;
+}
+
+.coachs .fer div{
+    width: 350px;
+}
+
+.coachs .fer img{
+    width: 200px;
+    height: 200px;
+}
 
 
 
