@@ -586,75 +586,75 @@ nav{
     }
 
     .guantes .iconomenu{
-        margin-bottom: 15% !important;
+        margin-bottom: 10% !important;
     }
 
     .guantes .menuguantes{
-        margin-top: -15%;
+        margin-top: -10%;
     }
 
     .espinilleras .iconomenu2{
-        margin-bottom: 15% !important;
+        margin-bottom: 10% !important;
     }
 
     .espinilleras .menuespinilleras{
-        margin-top: -15%;
+        margin-top: -10%;
     }
 
     .caretas .iconomenu3{
-        margin-bottom: 15% !important;
+        margin-bottom: 10% !important;
     }
 
     .caretas .menucaretas{
-        margin-top: -15%;
+        margin-top: -10%;
     }
 
     .bucales .iconomenu4{
-        margin-bottom: 15% !important;
+        margin-bottom: 10% !important;
     }
 
     .bucales .menubucales{
-        margin-top: -15%;
+        margin-top: -10%;
     }
 
     .vendajes .iconomenu5{
-        margin-bottom: 15% !important;
+        margin-bottom: 10% !important;
     }
 
     .vendajes .menuvendajes{
-        margin-top: -15%;
+        margin-top: -10%;
     }
 
     .futbol .iconomenu6{
-        margin-bottom: 15% !important;
+        margin-bottom: 10% !important;
     }
 
     .futbol .menufutbol{
-        margin-top: -15%;
+        margin-top: -10%;
     }
 
     .ropa .iconomenu7{
-        margin-bottom: 15% !important;
+        margin-bottom: 10% !important;
     }
 
     .ropa .menuropa{
-        margin-top: -15%;
+        margin-top: -10%;
     }
 
     .conchas .iconomenu8{
-        margin-bottom: 15% !important;
+        margin-bottom: 10% !important;
     }
 
     .conchas .menuconchas{
-        margin-top: -15%;
+        margin-top: -10%;
     }
 
     .accesorios .iconomenu9{
-        margin-bottom: 15% !important;
+        margin-bottom: 10% !important;
     }
 
     .accesorios .menuaccesorios{
-        margin-top: -15%;
+        margin-top: -10%;
     }
 }
 
@@ -1428,7 +1428,7 @@ nav{
     border-style: solid;
     border-color: white;
     border-width: 1px;
-    box-shadow: 5px 5px 15px red;
+    box-shadow: 0px 0px 25px 10px black;
     background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
@@ -1443,6 +1443,8 @@ nav{
     margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
+    border: solid 1px white;
+    box-shadow: 0px 15px 15px black;
 }
 
 .menuguantes img{
@@ -1523,7 +1525,7 @@ nav{
     border-style: solid;
     border-color: white;
     border-width: 1px;
-    box-shadow: 5px 5px 15px red;
+    box-shadow: 0px 0px 25px 10px black;
     background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
@@ -1539,6 +1541,8 @@ nav{
     margin-bottom: 5%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border: solid 1px white;
+    box-shadow: 0px 15px 15px black;
 }
 
 .menuespinilleras img{
@@ -1621,7 +1625,7 @@ nav{
     border-style: solid;
     border-color: white;
     border-width: 1px;
-    box-shadow: 5px 5px 15px red;
+    box-shadow: 0px 0px 25px 10px black;
     background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
@@ -1636,6 +1640,8 @@ nav{
     margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
+    border: solid 1px white;
+    box-shadow: 0px 15px 15px black;
 }
 
 .menucaretas img{
@@ -1716,7 +1722,7 @@ nav{
     border-style: solid;
     border-color: white;
     border-width: 1px;
-    box-shadow: 5px 5px 15px red;
+    box-shadow: 0px 0px 25px 10px black;
     background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
@@ -1731,6 +1737,8 @@ nav{
     margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
+    border: solid 1px white;
+    box-shadow: 0px 15px 15px black;
 }
 
 .menubucales img{
@@ -1811,7 +1819,7 @@ nav{
     border-style: solid;
     border-color: white;
     border-width: 1px;
-    box-shadow: 5px 5px 15px red;
+    box-shadow: 0px 0px 25px 10px black;
     background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
@@ -1826,6 +1834,8 @@ nav{
     margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
+    border: solid 1px white;
+    box-shadow: 0px 15px 15px black;
 }
 
 .menuvendajes img{
@@ -1905,7 +1915,7 @@ nav{
     border-style: solid;
     border-color: white;
     border-width: 1px;
-    box-shadow: 5px 5px 15px red;
+    box-shadow: 0px 0px 25px 10px black;
     background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
@@ -1920,6 +1930,8 @@ nav{
     margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
+    border: solid 1px white;
+    box-shadow: 0px 15px 15px black;
 }
 
 .menufutbol img{
@@ -1998,7 +2010,7 @@ nav{
     border-style: solid;
     border-color: white;
     border-width: 1px;
-    box-shadow: 5px 5px 15px red;
+    box-shadow: 0px 0px 25px 10px black;
     background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
@@ -2013,6 +2025,8 @@ nav{
     margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
+    border: solid 1px white;
+    box-shadow: 0px 15px 15px black;
 }
 
 .menuropa img{
@@ -2091,7 +2105,7 @@ nav{
     border-style: solid;
     border-color: white;
     border-width: 1px;
-    box-shadow: 5px 5px 15px red;
+    box-shadow: 0px 0px 25px 10px black;
     background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
@@ -2106,6 +2120,8 @@ nav{
     margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
+    border: solid 1px white;
+    box-shadow: 0px 15px 15px black;
 }
 
 .menuconchas img{
@@ -2183,7 +2199,7 @@ nav{
     border-style: solid;
     border-color: white;
     border-width: 1px;
-    box-shadow: 5px 5px 15px red;
+    box-shadow: 0px 0px 25px 10px black;
     background-color: black;
     transform: scale(1.1);
     border-bottom-right-radius: 1px;
@@ -2198,6 +2214,8 @@ nav{
     margin-top: -5%;
     margin-bottom: 5%;
     border-radius: 10px;
+    border: solid 1px white;
+    box-shadow: 0px 15px 15px black;
 }
 
 .menuaccesorios img{
