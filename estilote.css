@@ -312,6 +312,11 @@ nav{
         background-color: black;
         padding-top: 50px;
         padding-bottom: 50px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .coachs::-webkit-scrollbar{
+        display: none;
     }
 
     .coachs .tony{
@@ -326,6 +331,7 @@ nav{
         border-radius: 40px;
         opacity: .5;
         transition: .3s;
+        scroll-snap-align: center;
     }
 
     .coachs .tony:hover{
@@ -349,13 +355,13 @@ nav{
     .coachs .tony b{
         color: red;
         font-size: 60px;
-        margin-bottom: 20px;
     }
 
     .coachs .tony p{
         font-size: 40px;
         text-align: start;
         color: white;
+        margin-top: 80px;
     }
 
 
@@ -373,6 +379,7 @@ nav{
         border-radius: 40px;
         opacity: .5;
         transition: .3s;
+        scroll-snap-align: center;
     }
 
     .coachs .fer:hover{
@@ -396,13 +403,13 @@ nav{
     .coachs .fer b{
         color: red;
         font-size: 60px;
-        margin-bottom: 20px;
     }
 
     .coachs .fer p{
         font-size: 40px;
         text-align: start;
         color: white;
+        margin-top: 80px;
     }
     
 
@@ -816,20 +823,49 @@ nav{
 
 
 
-    .coachs{
-        background-color: blueviolet;
+    .section5{
+        background-color: black;
         width: 100%;
+        height: 500px;
+        align-content: center;
+    }
+
+    .coachs{
         display: flex;
-        flex-direction: row;
+        width: 100%;
         overflow-x: scroll;
         overflow-y: hidden;
-        gap: 25px;
+        gap: 15px;
+        background-color: black;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        scroll-snap-type: x mandatory;
     }
-    
+
+    .coachs::-webkit-scrollbar{
+        display: none;
+    }
+
     .coachs .tony{
-        background-color: red;
+        background-color: black;
         width: 350px;
         height: 450px;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid white;
+        border-radius: 40px;
+        opacity: .5;
+        transition: .3s;
+        scroll-snap-align: center;
+    }
+
+    .coachs .tony:hover{
+        opacity: 1;
+        transform: scale(1.07);
+        transition: .3s;
+        box-shadow: 5px 5px 15px red;
     }
     
     .coachs .tony div{
@@ -839,12 +875,45 @@ nav{
     .coachs .tony img{
         width: 200px;
         height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
     }
-    
+
+    .coachs .tony b{
+        color: red;
+        font-size: 25px;
+    }
+
+    .coachs .tony p{
+        font-size: 15px;
+        text-align: start;
+        color: white;
+        margin-top: 40px;
+    }
+
+
+
+
     .coachs .fer{
-        background-color: pink;
+        background-color: black;
         width: 350px;
         height: 450px;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid white;
+        border-radius: 40px;
+        opacity: .5;
+        transition: .3s;
+        scroll-snap-align: center;
+    }
+
+    .coachs .fer:hover{
+        opacity: 1;
+        transform: scale(1.07);
+        transition: .3s;
+        box-shadow: 5px 5px 15px red;
     }
     
     .coachs .fer div{
@@ -854,8 +923,21 @@ nav{
     .coachs .fer img{
         width: 200px;
         height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
     }
 
+    .coachs .fer b{
+        color: red;
+        font-size: 25px;
+    }
+
+    .coachs .fer p{
+        font-size: 15px;
+        text-align: start;
+        color: white;
+        margin-top: 40px;
+    }
 }
 
 .section2{
