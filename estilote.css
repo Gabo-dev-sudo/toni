@@ -297,6 +297,46 @@ nav{
 
 
 
+    .coachs{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        gap: 50px;
+        background-color: blueviolet;
+    }
+
+    .coachs .tony{
+        background-color: red;
+        width: 700px;
+        height: 900px;
+    }
+    
+    .coachs .tony div{
+        width: 700px;
+    }
+    
+    .coachs .tony img{
+        width: 400px;
+        height: 400px;
+    }
+    
+    .coachs .fer{
+        background-color: pink;
+        width: 700px;
+        height: 900px;
+    }
+    
+    .coachs .fer div{
+        width: 700px;
+    }
+    
+    .coachs .fer img{
+        width: 400px;
+        height: 400px;
+    }
+
+
 
     
     
@@ -703,6 +743,49 @@ nav{
         font-size: 20px;
     }
 
+
+
+
+    .coachs{
+        background-color: blueviolet;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        gap: 25px;
+    }
+    
+    .coachs .tony{
+        background-color: red;
+        width: 350px;
+        height: 450px;
+    }
+    
+    .coachs .tony div{
+        width: 350px;
+    }
+    
+    .coachs .tony img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .coachs .fer{
+        background-color: pink;
+        width: 350px;
+        height: 450px;
+    }
+    
+    .coachs .fer div{
+        width: 350px;
+    }
+    
+    .coachs .fer img{
+        width: 200px;
+        height: 200px;
+    }
+
 }
 
 .section2{
@@ -788,45 +871,7 @@ nav{
 
 
 
-.coachs{
-    background-color: blueviolet;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    gap: 25px;
-}
 
-.coachs .tony{
-    background-color: red;
-    width: 350px;
-    height: 450px;
-}
-
-.coachs .tony div{
-    width: 350px;
-}
-
-.coachs .tony img{
-    width: 200px;
-    height: 200px;
-}
-
-.coachs .fer{
-    background-color: pink;
-    width: 350px;
-    height: 450px;
-}
-
-.coachs .fer div{
-    width: 350px;
-}
-
-.coachs .fer img{
-    width: 200px;
-    height: 200px;
-}
 
 
 
