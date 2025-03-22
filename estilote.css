@@ -149,7 +149,6 @@ nav{
         margin-top: 10%;
         margin-bottom: 5%;
         position: relative;
-        margin-right: -14%;
     }
 
     .redes a{
@@ -362,6 +361,7 @@ nav{
         text-align: start;
         color: white;
         margin-top: 10px;
+        text-align: center;
     }
 
 
@@ -410,6 +410,7 @@ nav{
         text-align: start;
         color: white;
         margin-top: 10px;
+        text-align: center;
     }
     
 
@@ -889,6 +890,7 @@ nav{
         text-align: start;
         color: white;
         margin-top: 40px;
+        text-align: center;
     }
 
 
@@ -937,6 +939,7 @@ nav{
         text-align: start;
         color: white;
         margin-top: 40px;
+        text-align: center;
     }
 }
 
@@ -998,7 +1001,6 @@ nav{
 }
 
 .section4{
-    background-color: transparent;
     width: 100%;
     height: 600px;
     justify-items: center;
@@ -1008,15 +1010,17 @@ nav{
 .entrenadores{
     width: 85%;
     color: white;
-    text-align: center;
+    
 }
 
 .entrenadores h3{
     font-size: 35px;
+    text-align: center;
 }
 
 .entrenadores p{
     font-size: 20px;
+    text-align: center;
 }
 
 
