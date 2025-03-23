@@ -603,6 +603,7 @@ nav{
         height: 2000px !important;
     }
 
+
     .guantes .iconomenu{
         margin-bottom: 10% !important;
     }
@@ -610,6 +611,67 @@ nav{
     .guantes .menuguantes{
         margin-top: -10%;
     }
+
+    .guantes .menuguantes .guantesnegros{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .guantes .menuguantes .guantesnegros img{
+        width: 80%;
+    }
+
+    .guantes .menuguantes .guantesnegros h4{
+        font-size: 50px;
+    }
+
+    .guantes .menuguantes .guantesnegros p{
+        font-size: 30px;
+    }
+
+
+
+
+    .guantes .menuguantes .guantesmma{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .guantes .menuguantes .guantesmma img{
+        width: 80%;
+    }
+
+    .guantes .menuguantes .guantesmma h4{
+        font-size: 50px;
+    }
+
+    .guantes .menuguantes .guantesmma p{
+        font-size: 30px;
+    }
+
+
+
+
+    .guantes .menuguantes .guantesblancos{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .guantes .menuguantes .guantesblancos img{
+        width: 80%;
+    }
+
+    .guantes .menuguantes .guantesblancos h4{
+        font-size: 50px;
+    }
+
+    .guantes .menuguantes .guantesblancos p{
+        font-size: 30px;
+    }
+
+
+
+
 
     .espinilleras .iconomenu2{
         margin-bottom: 10% !important;
@@ -619,6 +681,29 @@ nav{
         margin-top: -10%;
     }
 
+    .espinilleras .menuespinilleras .espinillerasmma{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .espinilleras .menuespinilleras .espinillerasmma img{
+        width: 80%;
+    }
+
+    .espinilleras .menuespinilleras .espinillerasmma h4{
+        font-size: 50px;
+    }
+
+    .espinilleras .menuespinilleras .espinillerasmma p{
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
     .caretas .iconomenu3{
         margin-bottom: 10% !important;
     }
@@ -626,6 +711,47 @@ nav{
     .caretas .menucaretas{
         margin-top: -10%;
     }
+
+    .caretas .menucaretas .caretabox{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .caretas .menucaretas .caretabox img{
+        width: 80%;
+    }
+
+    .caretas .menucaretas .caretabox h4{
+        font-size: 50px;
+    }
+
+    .caretas .menucaretas .caretabox p{
+        font-size: 30px;
+    }
+
+
+
+    .caretas .menucaretas .caretamma{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .caretas .menucaretas .caretamma img{
+        width: 80%;
+    }
+
+    .caretas .menucaretas .caretamma h4{
+        font-size: 50px;
+    }
+
+    .caretas .menucaretas .caretamma p{
+        font-size: 30px;
+    }
+
+
+
+
+
 
     .bucales .iconomenu4{
         margin-bottom: 10% !important;
@@ -635,6 +761,30 @@ nav{
         margin-top: -10%;
     }
 
+    .bucales .menubucales .bucal{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .bucales .menubucales .bucal img{
+        width: 80%;
+    }
+
+    .bucales .menubucales .bucal h4{
+        font-size: 50px;
+    }
+
+    .bucales .menubucales .bucal p{
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
+
     .vendajes .iconomenu5{
         margin-bottom: 10% !important;
     }
@@ -642,6 +792,48 @@ nav{
     .vendajes .menuvendajes{
         margin-top: -10%;
     }
+
+    .vendajes .menuvendajes .quetzal{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .vendajes .menuvendajes .quetzal img{
+        width: 80%;
+    }
+
+    .vendajes .menuvendajes .quetzal h4{
+        font-size: 50px;
+    }
+
+    .vendajes .menuvendajes .quetzal p{
+        font-size: 30px;
+    }
+
+
+
+    .vendajes .menuvendajes .box{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .vendajes .menuvendajes .box img{
+        width: 80%;
+    }
+
+    .vendajes .menuvendajes .box h4{
+        font-size: 50px;
+    }
+
+    .vendajes .menuvendajes .box p{
+        font-size: 30px;
+    }
+
+
+
+
+
+
 
     .futbol .iconomenu6{
         margin-bottom: 10% !important;
@@ -651,6 +843,70 @@ nav{
         margin-top: -10%;
     }
 
+    .futbol .menufutbol .medias{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .futbol .menufutbol .medias img{
+        width: 80%;
+    }
+
+    .futbol .menufutbol .medias h4{
+        font-size: 50px;
+    }
+
+    .futbol .menufutbol .medias p{
+        font-size: 30px;
+    }
+
+
+
+
+    .futbol .menufutbol .guantesfut{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .futbol .menufutbol .guantesfut img{
+        width: 80%;
+    }
+
+    .futbol .menufutbol .guantesfut h4{
+        font-size: 50px;
+    }
+
+    .futbol .menufutbol .guantesfut p{
+        font-size: 30px;
+    }
+
+
+
+
+    .futbol .menufutbol .balon{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .futbol .menufutbol .balon img{
+        width: 80%;
+    }
+
+    .futbol .menufutbol .balon h4{
+        font-size: 50px;
+    }
+
+    .futbol .menufutbol .balon p{
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
+
     .ropa .iconomenu7{
         margin-bottom: 10% !important;
     }
@@ -658,6 +914,31 @@ nav{
     .ropa .menuropa{
         margin-top: -10%;
     }
+
+    .ropa .menuropa .rashguard{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .ropa .menuropa .rashguard img{
+        width: 80%;
+    }
+
+    .ropa .menuropa .rashguard h4{
+        font-size: 50px;
+    }
+
+    .ropa .menuropa .rashguard p{
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
+
 
     .conchas .iconomenu8{
         margin-bottom: 10% !important;
@@ -667,6 +948,33 @@ nav{
         margin-top: -10%;
     }
 
+    .conchas .menuconchas .inguinal{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .conchas .menuconchas .inguinal img{
+        width: 80%;
+    }
+
+    .conchas .menuconchas .inguinal h4{
+        font-size: 50px;
+    }
+
+    .conchas .menuconchas .inguinal p{
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
     .accesorios .iconomenu9{
         margin-bottom: 10% !important;
     }
@@ -674,6 +982,25 @@ nav{
     .accesorios .menuaccesorios{
         margin-top: -10%;
     }
+
+    .accesorios .menuaccesorios .cinta{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .accesorios .menuaccesorios .cinta img{
+        width: 80%;
+    }
+
+    .accesorios .menuaccesorios .cinta h4{
+        font-size: 50px;
+    }
+
+    .accesorios .menuaccesorios .cinta p{
+        font-size: 30px;
+    }
+
+
 }
 
 @media(min-width:1001px){
