@@ -443,6 +443,10 @@ nav{
         padding-top: 5% !important;
     }
 
+    .amm a{
+        font-size: 30px;
+    }
+
     .informacion{
         width: 90% !important;
     }
@@ -480,6 +484,10 @@ nav{
         padding-top: 5% !important;
     }
 
+    .jj a{
+        font-size: 30px;
+    }
+
     .informacion2{
         width: 80% !important;
     }
@@ -512,6 +520,10 @@ nav{
 
     .bk{
         padding-top: 5% !important;
+    }
+
+    .bk a{
+        font-size: 30px;
     }
 
     .informacion3{
@@ -550,6 +562,10 @@ nav{
         padding-top: 5% !important;
     }
 
+    .mut a{
+        font-size: 30px;
+    }
+
     .informacion4{
         margin-top: 5% !important;
         width: 80% !important;
@@ -579,6 +595,8 @@ nav{
         border-radius: 20px;
         width:60% !important;
     }
+
+    
 
     /*Pantalla 3 Productos Responsive*/
     .section7{
