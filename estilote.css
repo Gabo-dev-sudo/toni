@@ -437,17 +437,18 @@ nav{
        font-size: 250% !important;
     }
 
+
+
     .amm{
         padding-top: 5% !important;
     }
 
     .informacion{
-        width: 100% !important;
+        width: 90% !important;
     }
     
     .informacion img{
         width: 80% !important;
-        margin-left: 5%;
     }
     
     .informacion h3{
@@ -465,26 +466,26 @@ nav{
         margin-top: 10%;
         width: 100%;
         flex-direction: column;
-        padding-bottom: 5% !important;
+        align-items: center;
     }
     
     .horarios img{
-        border-radius: 20px;
         width: 80% !important;
-        margin-left: 10%;
         margin-bottom: 5%;
     }
+
+
 
     .jj{
         padding-top: 5% !important;
     }
 
     .informacion2{
-        width: 100% !important;
+        width: 80% !important;
     }
     
     .informacion2 img{
-        width: 100% !important;
+        width: 90% !important;
     }
     
     .informacion2 h3{
@@ -501,26 +502,25 @@ nav{
         margin-top: 10%;
         width: 100%;
         height: 100% !important;
-        padding-bottom: 5% !important;
     }
     
     .horarios2 img{
-        border-radius: 20px;
-        width: 100% !important;
+        width: 60% !important;
     }
+
+
 
     .bk{
         padding-top: 5% !important;
     }
 
     .informacion3{
-        width: 100% !important;
-        justify-content: center;
+        width: 80% !important;
+        text-align: center;
     }
     
     .informacion3 img{
         width: 25% !important;
-        margin-left: 35%;
     }
     
     .informacion3 h3{
@@ -537,27 +537,27 @@ nav{
         margin-top: 10% !important;
         width: 100%;
         height: 100% !important;
-        padding-bottom: 5% !important;
     }
     
     .horarios3 img{
         border-radius: 20px;
-        width:100% !important;
+        width:60% !important;
     }
+
+
 
     .mut{
         padding-top: 5% !important;
     }
 
     .informacion4{
-        margin-top: 10% !important;
-        width: 100% !important;
-        justify-content: center;
+        margin-top: 5% !important;
+        width: 80% !important;
+        text-align: center;
     }
     
     .informacion4 img{
         width: 50% !important;
-        margin-left: 25%;
     }
     
     .informacion4 h3{
@@ -573,12 +573,11 @@ nav{
     .horarios4{
         width: 100%;
         height: 100% !important;
-        padding-bottom: 5% !important;
     }
     
     .horarios4 img{
         border-radius: 20px;
-        width:100% !important;
+        width:60% !important;
     }
 
     /*Pantalla 3 Productos Responsive*/
@@ -1061,18 +1060,65 @@ nav{
     text-align: center;
 }
 
-.amm{
-    padding-top: 30px;
-    background-color: black;
+
+
+
+.amm .informacion{
+    width: 80%;
     justify-items: center;
 }
 
+.amm .informacion img{
+    width: 200px;
+}
+
+.amm .informacion h3{
+    font-size: 35px;
+    color: red;
+}
+
+.amm .informacion p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.amm{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+    justify-items: center;
+    height: 100%;
+}
+
+.amm .horarios{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.amm .horarios img{
+    width: 30%;
+    transition: .3s;
+    box-shadow: 5px 5px 15px red;
+    border-radius: 20px;
+
+}
+
+.amm .horarios img:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
 .amm a{
+    margin-top: 30px;
     background-color: red;
-    padding: 20px 35px 20px 35px;
-    color: black;
+    padding: 20px;
+    border-radius: 30px;
     text-decoration: none;
-    border-radius: 40px;
+    color: black;
     transition: .3s;
 }
 
@@ -1081,45 +1127,8 @@ nav{
     transition: .3s;
 }
 
-.informacion{
-    width: 80%;
-    justify-items: center;
-}
 
-.informacion img{
-    width: 200px;
-}
 
-.informacion h3{
-    font-size: 35px;
-    color: red;
-}
-
-.informacion p{
-    font-size: 20px;
-    color: white;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
-.horarios{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 30px;
-}
-
-.horarios img{
-    border-radius: 20px;
-    width: 400px;
-    box-shadow: 5px 5px 15px red;
-    transition: .3s;
-}
-
-.horarios img:hover{
-    transform: scale(1.05);
-    transition: .3s;
-}
 
 .division{
     color: transparent;
@@ -1127,18 +1136,65 @@ nav{
     height: 400px;
 }
 
-.jj{
-    padding-top: 30px;
-    background-color:black;
+
+
+
+.jj .informacion2{
+    width: 80%;
     justify-items: center;
 }
 
+.jj .informacion2 img{
+    width: 200px;
+}
+
+.jj .informacion2 h3{
+    font-size: 35px;
+    color: red;
+}
+
+.jj .informacion2 p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.jj{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+    justify-items: center;
+    height: 100%;
+}
+
+.jj .horarios2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.jj .horarios2 img{
+    width: 30%;
+    transition: .3s;
+    box-shadow: 5px 5px 15px red;
+    border-radius: 20px;
+
+}
+
+.jj .horarios2 img:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
 .jj a{
+    margin-top: 30px;
     background-color: red;
-    padding: 20px 35px 20px 35px;
-    color: black;
+    padding: 20px;
+    border-radius: 30px;
     text-decoration: none;
-    border-radius: 40px;
+    color: black;
     transition: .3s;
 }
 
@@ -1147,59 +1203,64 @@ nav{
     transition: .3s;
 }
 
-.informacion2{
+
+
+.bk .informacion3{
     width: 80%;
     justify-items: center;
 }
 
-.informacion2 img{
+.bk .informacion3 img{
     width: 200px;
 }
 
-.informacion2 h3{
+.bk .informacion3 h3{
     font-size: 35px;
     color: red;
 }
 
-.informacion2 p{
+.bk .informacion3 p{
     font-size: 20px;
     color: white;
     padding-bottom: 30px;
     text-align: center;
 }
 
-.horarios2{
+.bk{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+    justify-items: center;
+    height: 100%;
+}
+
+.bk .horarios3{
     width: 100%;
-    height: 750px;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.horarios2 img{
-    border-radius: 20px;
-    width: 350px;
-    box-shadow: 5px 5px 15px red;
+.bk .horarios3 img{
+    width: 30%;
     transition: .3s;
+    box-shadow: 5px 5px 15px red;
+    border-radius: 20px;
+
 }
 
-.horarios2 img:hover{
+.bk .horarios3 img:hover{
     transform: scale(1.05);
     transition: .3s;
 }
 
-.bk{
-    padding-top: 30px;
-    background-color:black;
-    justify-items: center;
-}
-
 .bk a{
+    margin-top: 30px;
     background-color: red;
-    padding: 20px 35px 20px 35px;
-    color: black;
+    padding: 20px;
+    border-radius: 30px;
     text-decoration: none;
-    border-radius: 40px;
+    color: black;
     transition: .3s;
 }
 
@@ -1208,107 +1269,71 @@ nav{
     transition: .3s;
 }
 
-.informacion3{
+
+
+
+
+.mut .informacion4{
     width: 80%;
     justify-items: center;
 }
 
-.informacion3 img{
+.mut .informacion4 img{
     width: 200px;
 }
 
-.informacion3 h3{
+.mut .informacion4 h3{
     font-size: 35px;
     color: red;
 }
 
-.informacion3 p{
+.mut .informacion4 p{
     font-size: 20px;
     color: white;
     padding-bottom: 30px;
     text-align: center;
 }
 
-.horarios3{
+.mut{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+    justify-items: center;
+    height: 100%;
+}
+
+.mut .horarios4{
     width: 100%;
-    height: 500px;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.horarios3 img{
-    border-radius: 20px;
-    width: 350px;
-    box-shadow: 5px 5px 15px red;
+.mut .horarios4 img{
+    width: 30%;
     transition: .3s;
+    box-shadow: 5px 5px 15px red;
+    border-radius: 20px;
+
 }
 
-.horarios3 img:hover{
+.mut .horarios4 img:hover{
     transform: scale(1.05);
     transition: .3s;
 }
 
-.mut{
-    padding-top: 30px;
-    background-color:black;
-    justify-items: center;
-}
-
 .mut a{
+    margin-top: 30px;
     background-color: red;
-    padding: 20px 35px 20px 35px;
-    color: black;
+    padding: 20px;
+    border-radius: 30px;
     text-decoration: none;
-    border-radius: 40px;
+    color: black;
     transition: .3s;
 }
 
 .mut a:hover{
     color: white;
-    transition: .3s;
-}
-
-.informacion4{
-    width: 80%;
-    justify-items: center;
-}
-
-.informacion4 img{
-    width: 300px;
-    position: relative;
-    right: -70px;
-}
-
-.informacion4 h3{
-    font-size: 35px;
-    color: red;
-}
-
-.informacion4 p{
-    font-size: 20px;
-    color: white;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
-.horarios4{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 30px;
-}
-
-.horarios4 img{
-    border-radius: 20px;
-    width: 350px;
-    box-shadow: 5px 5px 15px red;
-    transition: .3s;
-}
-
-.horarios4 img:hover{
-    transform: scale(1.05);
     transition: .3s;
 }
 
