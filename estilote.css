@@ -490,7 +490,6 @@ nav{
         text-align: start;
         color: white;
         text-align: center;
-        margin-top: 5%;
         width: 80%;
     }
 
@@ -547,9 +546,11 @@ nav{
     }
     
     .campeones .chuky img{
-        width: 600px;
-        height: 600px;
+        width: 450px;
+        height: 450px;
         border-radius: 50%;
+        margin-top: 10%;
+        margin-bottom: 5%;
     }
 
     .campeones .chuky b{
@@ -571,7 +572,7 @@ nav{
     .campeones .chuky .redeschuky{
         width: 70%;
         text-align: center;
-        padding-top: 10%;
+        margin-top: 10%;
     }
 
     .campeones .chuky .redeschuky img{
@@ -620,16 +621,19 @@ nav{
     }
     
     .campeones .fer img{
-        width: 600px;
-        height: 600px;
+        width: 450px;
+        height: 450px;
         border-radius: 50%;
+        margin-top: 10%;
+        margin-bottom: 5%;
     }
 
     .campeones .fer b{
         color: red;
         font-size: 60px;
-        width: 80%;
+        width: 50%;
         padding-top: 5%;
+        text-align: center;
     }
 
     .campeones .fer p{
@@ -644,7 +648,7 @@ nav{
     .campeones .fer .redesfer{
         width: 70%;
         text-align: center;
-        padding-top: 10%;
+        margin-top: 10%;
     }
 
     .campeones .fer .redesfer img{
@@ -1478,8 +1482,8 @@ nav{
     }
     
     .coachs .tony img{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
         margin-bottom: 20px;
     }
@@ -1493,7 +1497,7 @@ nav{
         font-size: 15px;
         text-align: start;
         color: white;
-        margin-top: 40px;
+        margin-top: 5%;
         text-align: center;
     }
 
@@ -1527,8 +1531,8 @@ nav{
     }
     
     .coachs .fer img{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
         margin-bottom: 20px;
     }
@@ -1542,7 +1546,7 @@ nav{
         font-size: 15px;
         text-align: start;
         color: white;
-        margin-top: 40px;
+        margin-top: 2%;
         text-align: center;
     }
 
@@ -1576,6 +1580,7 @@ nav{
         display: none;
     }
 
+
     .campeones .titi{
         background-color: black;
         border: 1px solid white;
@@ -1602,9 +1607,11 @@ nav{
     }
     
     .campeones .titi img{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .campeones .titi b{
@@ -1672,15 +1679,16 @@ nav{
     }
     
     .campeones .chuky img{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .campeones .chuky b{
-        color: red;
+        color: red´;
         font-size: 25px;
-        margin-top: 10%;
     }
 
     .campeones .chuky p{
@@ -1743,9 +1751,11 @@ nav{
     }
     
     .campeones .fer img{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .campeones .fer b{
@@ -1765,7 +1775,6 @@ nav{
     .campeones .fer .redesfer{
         width: 70%;
         text-align: center;
-        margin-top: 2%;
     }
 
     .campeones .fer .redesfer img{
