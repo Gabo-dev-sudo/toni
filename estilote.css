@@ -295,6 +295,8 @@ nav{
     
 
 
+
+
     .section5{
         background-color: black;
         width: 100%;
@@ -414,6 +416,260 @@ nav{
     }
     
 
+
+
+
+
+
+
+
+    .sectioncampeones{
+        background-color: black;
+        width: 100%;
+        height: 2000px;
+        align-content: center;
+    }
+
+    .campeones{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        gap: 50px;
+        background-color: black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .campeones::-webkit-scrollbar{
+        display: none;
+    }
+
+    .campeones .titi{
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 40px;
+        opacity: .5;
+        transition: .3s;
+        scroll-snap-align: center;
+        justify-items: center;
+        padding-top: 2%;
+        width: 700px;
+        height: 1200px;
+    }
+
+    .campeones .titi:hover{
+        opacity: 1;
+        transform: scale(1.07);
+        transition: .3s;
+        box-shadow: 5px 5px 15px red;
+    }
+    
+    .campeones .titi .img{
+        width: 700px;
+        text-align: center;
+    }
+    
+    .campeones .titi img{
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+    }
+
+    .campeones .titi b{
+        color: red;
+        font-size: 60px;
+        width: 80%;
+    }
+
+    .campeones .titi p{
+        font-size: 40px;
+        text-align: start;
+        color: white;
+        text-align: center;
+        padding-top: 8%;
+        width: 80%;
+    }
+
+    .campeones .titi .redestiti{
+        width: 70%;
+        text-align: center;
+        padding-top: 8%;
+    }
+
+    .campeones .titi .redestiti img{
+        width: 9%;
+        height: 9%;
+    }
+
+    .campeones .titi .redestiti img:hover{
+        width: 9%;
+        height: 9%;
+        background-color: white;
+    }
+
+    .campeones .titi .redestiti a{
+       color: white;
+       font-size: 20px;
+    }
+
+
+
+
+
+    .campeones .chuky{
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 40px;
+        opacity: .5;
+        transition: .3s;
+        scroll-snap-align: center;
+        justify-items: center;
+        padding-top: 2%;
+        width: 700px;
+        height: 1200px;
+        text-align: center;
+    }
+
+    .campeones .chuky:hover{
+        opacity: 1;
+        transform: scale(1.07);
+        transition: .3s;
+        box-shadow: 5px 5px 15px red;
+    }
+    
+    .campeones .chuky .img{
+        width: 700px;
+        text-align: center;
+    }
+    
+    .campeones .chuky img{
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+    }
+
+    .campeones .chuky b{
+        color: red;
+        font-size: 60px;
+        width: 80%;
+    }
+
+    .campeones .chuky p{
+        font-size: 40px;
+        text-align: start;
+        color: white;
+        text-align: center;
+        padding-top: 2%;
+        width: 80%;
+    }
+
+    .campeones .chuky .redeschuky{
+        width: 70%;
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    .campeones .chuky .redeschuky img{
+        width: 9%;
+        height: 9%;
+    }
+
+    .campeones .chuky .redeschuky img:hover{
+        width: 9%;
+        height: 9%;
+        background-color: white;
+    }
+
+    .campeones .chuky .redeschuky a{
+       color: white;
+       font-size: 20px;
+    }
+
+
+
+
+    .campeones .fer{
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 40px;
+        opacity: .5;
+        transition: .3s;
+        scroll-snap-align: center;
+        justify-items: center;
+        padding-top: 2%;
+        width: 700px;
+        height: 1200px;
+        text-align: center;
+    }
+
+    .campeones .fer:hover{
+        opacity: 1;
+        transform: scale(1.07);
+        transition: .3s;
+        box-shadow: 5px 5px 15px red;
+    }
+    
+    .campeones .fer .img{
+        width: 700px;
+        text-align: center;
+    }
+    
+    .campeones .fer img{
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+    }
+
+    .campeones .fer b{
+        color: red;
+        font-size: 60px;
+        width: 80%;
+    }
+
+    .campeones .fer p{
+        font-size: 40px;
+        text-align: start;
+        color: white;
+        text-align: center;
+        padding-top: 2%;
+        width: 80%;
+    }
+
+    .campeones .fer .redesfer{
+        width: 70%;
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    .campeones .fer .redesfer img{
+        width: 9%;
+        height: 9%;
+    }
+
+    .campeones .fer .redesfer img:hover{
+        width: 9%;
+        height: 9%;
+        background-color: white;
+    }
+
+    .campeones .fer .redesfer a{
+       color: white;
+       font-size: 20px;
+    }
+
+
+
+
+
+    
+
+
+
+
+
+    
 
 
     
@@ -1285,7 +1541,259 @@ nav{
         margin-top: 40px;
         text-align: center;
     }
+
+
+
+
+
+
+
+
+    .sectioncampeones{
+        background-color: black;
+        width: 100%;
+        height: 500px;
+        align-content: center;
+    }
+
+    .campeones{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        gap: 15px;
+        background-color: black;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .campeones::-webkit-scrollbar{
+        display: none;
+    }
+
+    .campeones .titi{
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 40px;
+        opacity: .5;
+        transition: .3s;
+        scroll-snap-align: center;
+        justify-items: center;
+        padding: 1%;
+        width: 350px;
+        height: 500px;
+    }
+
+    .campeones .titi:hover{
+        opacity: 1;
+        transform: scale(1.07);
+        transition: .3s;
+        box-shadow: 5px 5px 15px red;
+    }
+    
+    .campeones .titi .img{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .campeones .titi img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .campeones .titi b{
+        color: red;
+        font-size: 25px;
+    }
+
+    .campeones .titi p{
+        font-size: 15px;
+        text-align: start;
+        color: white;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .campeones .titi .redestiti{
+        width: 70%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .campeones .titi .redestiti img{
+        width: 9%;
+        height: 9%;
+    }
+
+    .campeones .titi .redestiti img:hover{
+        width: 9%;
+        height: 9%;
+        background-color: white;
+    }
+
+    .campeones .titi .redestiti a{
+       color: white;
+       font-size: 12px;
+    }
+
+
+
+
+
+    .campeones .chuky{
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 40px;
+        opacity: .5;
+        transition: .3s;
+        scroll-snap-align: center;
+        justify-items: center;
+        padding: 1%;
+        width: 350px;
+        height: 500px;
+    }
+
+    .campeones .chuky:hover{
+        opacity: 1;
+        transform: scale(1.07);
+        transition: .3s;
+        box-shadow: 5px 5px 15px red;
+    }
+    
+    .campeones .chuky .img{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .campeones .chuky img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .campeones .chuky b{
+        color: red;
+        font-size: 25px;
+        margin-top: 10%;
+    }
+
+    .campeones .chuky p{
+        font-size: 15px;
+        text-align: start;
+        color: white;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .campeones .chuky .redeschuky{
+        width: 70%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .campeones .chuky .redeschuky img{
+        width: 9%;
+        height: 9%;
+    }
+
+    .campeones .chuky .redeschuky img:hover{
+        width: 9%;
+        height: 9%;
+        background-color: white;
+    }
+
+    .campeones .chuky .redeschuky a{
+       color: white;
+       font-size: 12px;
+    }
+
+
+
+
+    .campeones .fer{
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 40px;
+        opacity: .5;
+        transition: .3s;
+        scroll-snap-align: center;
+        justify-items: center;
+        padding: 1%;
+        width: 350px;
+        height: 500px;
+        text-align: center;
+    }
+
+    .campeones .fer:hover{
+        opacity: 1;
+        transform: scale(1.07);
+        transition: .3s;
+        box-shadow: 5px 5px 15px red;
+    }
+    
+    .campeones .fer .img{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .campeones .fer img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .campeones .fer b{
+        color: red;
+        font-size: 25px;
+        margin-top: 5%;
+    }
+
+    .campeones .fer p{
+        font-size: 15px;
+        text-align: start;
+        color: white;
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    .campeones .fer .redesfer{
+        width: 70%;
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    .campeones .fer .redesfer img{
+        width: 9%;
+        height: 9%;
+    }
+
+    .campeones .fer .redesfer img:hover{
+        width: 9%;
+        height: 9%;
+        background-color: white;
+    }
+
+    .campeones .fer .redesfer a{
+       color: white;
+       font-size: 12px;
+    } 
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section2{
     background-color: transparent;
