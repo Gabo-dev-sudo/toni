@@ -481,6 +481,7 @@ nav{
         color: red;
         font-size: 60px;
         width: 80%;
+        padding-top: 5%;
     }
 
     .campeones .titi p{
@@ -495,7 +496,7 @@ nav{
     .campeones .titi .redestiti{
         width: 70%;
         text-align: center;
-        padding-top: 8%;
+        padding-top: 10%;
     }
 
     .campeones .titi .redestiti img{
@@ -554,6 +555,7 @@ nav{
         color: red;
         font-size: 60px;
         width: 80%;
+        padding-top: 5%;
     }
 
     .campeones .chuky p{
@@ -626,6 +628,7 @@ nav{
         color: red;
         font-size: 60px;
         width: 80%;
+        padding-top: 5%;
     }
 
     .campeones .fer p{
