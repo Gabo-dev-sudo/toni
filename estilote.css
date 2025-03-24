@@ -472,17 +472,17 @@ nav{
     }
     
     .campeones .titi img{
-        width: 400px;
-        height: 400px;
+        width: 450px;
+        height: 450px;
         border-radius: 50%;
         margin-top: 10%;
+        margin-bottom: 5%;
     }
 
     .campeones .titi b{
         color: red;
         font-size: 60px;
         width: 80%;
-        margin-top: 10%;
     }
 
     .campeones .titi p{
@@ -490,7 +490,7 @@ nav{
         text-align: start;
         color: white;
         text-align: center;
-        margin-top: 10%;
+        margin-top: 5%;
         width: 80%;
     }
 
