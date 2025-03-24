@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de Colores por Tonalidad</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        h1, h2 {
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .controls {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .palette-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .palette {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .palette-header {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+        
+        .color-swatch {
+            aspect-ratio: 1;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.2s;
+        }
+        
+        .color-swatch:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+        
+        .color-swatch:hover::after {
+            content: attr(data-color);
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 20;
+        }
+        
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        
+        select, input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .tooltip {
+            position: fixed;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            z-index: 100;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Paleta de Colores por Tonalidad</h1>
+        
+        <div class="controls">
+            <div>
+                <label for="color-type">Tipo de color:</label>
+                <select id="color-type">
+                    <option value="hue">Matiz (Hue)</option>
+                    <option value="red">Rojos</option>
+                    <option value="orange">Naranjas</option>
+                    <option value="yellow">Amarillos</option>
+                    <option value="green">Verdes</option>
+                    <option value="blue">Azules</option>
+                    <option value="purple">Morados</option>
+                    <option value="pink">Rosas</option>
+                    <option value="brown">Marrones</option>
+                    <option value="gray">Grises</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="shades">Número de tonalidades:</label>
+                <input type="number" id="shades" value="5" min="3" max="10">
+            </div>
+            
+            <div>
+                <label for="variations">Número de variaciones:</label>
+                <input type="number" id="variations" value="5" min="3" max="10">
+            </div>
+            
+            <button id="generate-btn" class="btn">Generar Paleta</button>
+        </div>
+        
+        <div class="palette-container" id="palette-container">
+            <!-- Las paletas se generarán aquí -->
+        </div>
+    </div>
+    
+    <div class="tooltip" id="tooltip"></div>
+    <div class="notification" id="notification">Color copiado al portapapeles</div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const colorTypeSelect = document.getElementById('color-type');
+            const shadesInput = document.getElementById('shades');
+            const variationsInput = document.getElementById('variations');
+            const generateBtn = document.getElementById('generate-btn');
+            const paletteContainer = document.getElementById('palette-container');
+            const tooltip = document.getElementById('tooltip');
+            const notification = document.getElementById('notification');
+            
+            // Función para convertir HSL a RGB
+            function hslToRgb(h, s, l) {
+                let r, g, b;
+                
+                if (s === 0) {
+                    r = g = b = l; // Acromático
+                } else {
+                    const hue2rgb = (p, q, t) => {
+                        if (t < 0) t += 1;
+                        if (t > 1) t -= 1;
+                        if (t < 1/6) return p + (q - p) * 6 * t;
+                        if (t < 1/2) return q;
+                        if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+                        return p;
+                    };
+                    
+                    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+                    const p = 2 * l - q;
+                    r = hue2rgb(p, q, h + 1/3);
+                    g = hue2rgb(p, q, h);
+                    b = hue2rgb(p, q, h - 1/3);
+                }
+                
+                return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+            }
+            
+            // Función para convertir RGB a Hex
+            function rgbToHex(r, g, b) {
+                return '#' + [r, g, b].map(x => {
+                    const hex = x.toString(16);
+                    return hex.length === 1 ? '0' + hex : hex;
+                }).join('');
+            }
+            
+            // Función para generar un color HSL basado en el tipo seleccionado
+            function generateBaseHue(type) {
+                switch(type) {
+                    case 'hue': return Math.random();
+                    case 'red': return (Math.random() * 30 / 360) || (330 + Math.random() * 30) / 360;
+                    case 'orange': return (15 + Math.random() * 30) / 360;
+                    case 'yellow': return (45 + Math.random() * 30) / 360;
+                    case 'green': return (75 + Math.random() * 60) / 360;
+                    case 'blue': return (180 + Math.random() * 60) / 360;
+                    case 'purple': return (240 + Math.random() * 60) / 360;
+                    case 'pink': return (300 + Math.random() * 30) / 360;
+                    case 'brown': return (20 + Math.random() * 20) / 360;
+                    case 'gray': return 0; // Saturation will be set to 0 for grays
+                    default: return Math.random();
+                }
+            }
+            
+            // Función para generar la paleta
+            function generatePalette() {
+                paletteContainer.innerHTML = '';
+                const colorType = colorTypeSelect.value;
+                const shades = parseInt(shadesInput.value);
+                const variations = parseInt(variationsInput.value);
+                
+                // Generar varias paletas
+                const paletteCount = colorType === 'hue' ? 6 : 1;
+                
+                for (let p = 0; p < paletteCount; p++) {
+                    const baseHue = generateBaseHue(colorType);
+                    const isGray = colorType === 'gray';
+                    
+                    const paletteElement = document.createElement('div');
+                    paletteElement.className = 'palette';
+                    
+                    const paletteHeader = document.createElement('div');
+                    paletteHeader.className = 'palette-header';
+                    
+                    let typeName;
+                    if (colorType === 'hue') {
+                        const hue = baseHue * 360;
+                        if (hue < 30 || hue >= 330) typeName = 'Rojos';
+                        else if (hue < 60) typeName = 'Naranjas';
+                        else if (hue < 90) typeName = 'Amarillos';
+                        else if (hue < 150) typeName = 'Verdes';
+                        else if (hue < 210) typeName = 'Cian';
+                        else if (hue < 270) typeName = 'Azules';
+                        else if (hue < 330) typeName = 'Morados';
+                    } else {
+                        typeName = colorTypeSelect.options[colorTypeSelect.selectedIndex].text;
+                    }
+                    
+                    paletteHeader.textContent = typeName;
+                    paletteElement.appendChild(paletteHeader);
+                    
+                    const colorGrid = document.createElement('div');
+                    colorGrid.className = 'color-grid';
+                    colorGrid.style.gridTemplateColumns = repeat(${variations}, 1fr);
+                    
+                    // Crear variaciones de color
+                    for (let i = 0; i < variations; i++) {
+                        // Variar saturación para horizontal (de izquierda a derecha: menos a más saturación)
+                        let saturation;
+                        if (isGray) {
+                            saturation = 0; // Grises siempre tienen saturación 0
+                        } else {
+                            saturation = 0.25 + (i / (variations - 1)) * 0.75;
+                        }
+                        
+                        for (let j = 0; j < shades; j++) {
+                            // Variar luminosidad para vertical (de arriba a abajo: más claro a más oscuro)
+                            const lightness = 0.85 - (j / (shades - 1)) * 0.7;
+                            
+                            const [r, g, b] = hslToRgb(baseHue, saturation, lightness);
+                            const hexColor = rgbToHex(r, g, b);
+                            
+                            const colorSwatch = document.createElement('div');
+                            colorSwatch.className = 'color-swatch';
+                            colorSwatch.style.backgroundColor = hexColor;
+                            colorSwatch.setAttribute('data-color', hexColor);
+                            colorSwatch.title = hexColor;
+                            
+                            // Eventos para mostrar el color y copiarlo
+                            colorSwatch.addEventListener('mousemove', (e) => {
+                                tooltip.textContent = hexColor;
+                                tooltip.style.left = e.pageX + 10 + 'px';
+                                tooltip.style.top = e.pageY + 10 + 'px';
+                                tooltip.style.opacity = '1';
+                            });
+                            
+                            colorSwatch.addEventListener('mouseout', () => {
+                                tooltip.style.opacity = '0';
+                            });
+                            
+                            colorSwatch.addEventListener('click', () => {
+                                navigator.clipboard.writeText(hexColor).then(() => {
+                                    notification.textContent = Color ${hexColor} copiado al portapapeles;
+                                    notification.style.opacity = '1';
+                                    notification.style.transform = 'translateY(0)';
+                                    
+                                    setTimeout(() => {
+                                        notification.style.opacity = '0';
+                                        notification.style.transform = 'translateY(-20px)';
+                                    }, 2000);
+                                });
+                            });
+                            
+                            colorGrid.appendChild(colorSwatch);
+                        }
+                    }
+                    
+                    paletteElement.appendChild(colorGrid);
+                    paletteContainer.appendChild(paletteElement);
+                }
+            }
+            
+            // Inicializar la paleta al cargar
+            generatePalette();
+            
+            // Escuchar eventos
+            generateBtn.addEventListener('click', generatePalette);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+
+.accesorios .iconomenu9{
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.accesorios .iconomenu9 div{
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+#chek9{
+    display: none;
+}
+
+#chek9:checked~.menuaccesorios{
+    display: block;
+}
+
+.menuaccesorios{
+    background-color: green;
+    display: none;
+    width: 100%;
+    position: relative;
+}
+
+.menuaccesorios img{
+    width: 35%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+.menuaccesorios div{
+    display: flex;
+}

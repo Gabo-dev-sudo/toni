@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+}
+
+
+
+.imagenub{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    position: fixed;
+    gap: 1vw;
+    bottom: 5vw;
+    right: 5vw;
+}
+
+.imagenub img{
+    width: 3vw;
+}
+
+.imagenub h6{
+    color: white;
+    font-size: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+.coachs{
+    display: flex;
+    gap: 25px;
+    background-color: blueviolet;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.coachs .tony{
+    background-color: red;
+    width: 350px;
+    height: 450px;
+}
+
+.coachs .fer{
+    background-color: pink;
+    width: 350px;
+    height: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

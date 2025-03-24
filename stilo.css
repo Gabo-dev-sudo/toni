@@ -1,0 +1,11 @@
+.caja_padre{
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    justify-items: center;
+    align-content: center;
+}
+
+.caja_hijo{
+    background-color: aqua;
+}
