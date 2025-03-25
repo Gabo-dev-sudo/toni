@@ -198,7 +198,6 @@ nav{
     .redes .ubi img{
         width: 25%;
         transition: .3s;
-        border-radius: 25px;
         mask-image: none;
    }
     
@@ -2298,6 +2297,7 @@ nav{
 
 
 
+
 .guantes{
     justify-items: center;
 }
@@ -2334,19 +2334,36 @@ nav{
 
 }
 
-.iconomenu div:nth-child(2){
+#chek:not(:checked)~.iconomenu div:nth-child(2){
     position: relative;
-    right: 6px;
-    bottom: -10px;
-    rotate: 40deg;
-
-}
-
-.iconomenu div:nth-child(3){
-    position: relative;
-    right: -8px;
+    right: -5px;
     rotate: -45deg;
     bottom: -4px;
+    transition: .5s;
+}
+
+#chek:not(:checked)~.iconomenu div:nth-child(3){
+    position: relative;
+    right: 7px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
+}
+
+#chek:checked~.iconomenu div:nth-child(2){
+    position: relative;
+    right: 9px;
+    rotate: -45deg;
+    bottom: -4px;
+    transition: .5s;
+}
+
+#chek:checked~.iconomenu div:nth-child(3){
+    position: relative;
+    right: -4px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
 }
 
 #chek{
@@ -2460,19 +2477,36 @@ nav{
     margin-bottom: 3px;
 }
 
-.iconomenu2 div:nth-child(2){
+#chek2:not(:checked)~.iconomenu2 div:nth-child(2){
     position: relative;
-    right: 6px;
-    bottom: -10px;
-    rotate: 40deg;
-
-}
-
-.iconomenu2 div:nth-child(3){
-    position: relative;
-    right: -8px;
+    right: -5px;
     rotate: -45deg;
     bottom: -4px;
+    transition: .5s;
+}
+
+#chek2:not(:checked)~.iconomenu2 div:nth-child(3){
+    position: relative;
+    right: 7px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
+}
+
+#chek2:checked~.iconomenu2 div:nth-child(2){
+    position: relative;
+    right: 9px;
+    rotate: -45deg;
+    bottom: -4px;
+    transition: .5s;
+}
+
+#chek2:checked~.iconomenu2 div:nth-child(3){
+    position: relative;
+    right: -4px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
 }
 
 #chek2{
@@ -2571,19 +2605,36 @@ nav{
     font-size: 40px;
 }
 
-.iconomenu3 div:nth-child(2){
+#chek3:not(:checked)~.iconomenu3 div:nth-child(2){
     position: relative;
-    right: 6px;
-    bottom: -10px;
-    rotate: 40deg;
-
-}
-
-.iconomenu3 div:nth-child(3){
-    position: relative;
-    right: -8px;
+    right: -5px;
     rotate: -45deg;
     bottom: -4px;
+    transition: .5s;
+}
+
+#chek3:not(:checked)~.iconomenu3 div:nth-child(3){
+    position: relative;
+    right: 7px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
+}
+
+#chek3:checked~.iconomenu3 div:nth-child(2){
+    position: relative;
+    right: 9px;
+    rotate: -45deg;
+    bottom: -4px;
+    transition: .5s;
+}
+
+#chek3:checked~.iconomenu3 div:nth-child(3){
+    position: relative;
+    right: -4px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
 }
 
 #chek3{
@@ -2688,19 +2739,36 @@ nav{
     margin-bottom: 3px;
 }
 
-.iconomenu4 div:nth-child(2){
+#chek4:not(:checked)~.iconomenu4 div:nth-child(2){
     position: relative;
-    right: 6px;
-    bottom: -10px;
-    rotate: 40deg;
-
-}
-
-.iconomenu4 div:nth-child(3){
-    position: relative;
-    right: -8px;
+    right: -5px;
     rotate: -45deg;
     bottom: -4px;
+    transition: .5s;
+}
+
+#chek4:not(:checked)~.iconomenu4 div:nth-child(3){
+    position: relative;
+    right: 7px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
+}
+
+#chek4:checked~.iconomenu4 div:nth-child(2){
+    position: relative;
+    right: 9px;
+    rotate: -45deg;
+    bottom: -4px;
+    transition: .5s;
+}
+
+#chek4:checked~.iconomenu4 div:nth-child(3){
+    position: relative;
+    right: -4px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
 }
 
 #chek4{
@@ -2796,19 +2864,36 @@ nav{
     margin-bottom: 3px;
 }
 
-.iconomenu5 div:nth-child(2){
+#chek5:not(:checked)~.iconomenu5 div:nth-child(2){
     position: relative;
-    right: 6px;
-    bottom: -10px;
-    rotate: 40deg;
-
-}
-
-.iconomenu5 div:nth-child(3){
-    position: relative;
-    right: -8px;
+    right: -5px;
     rotate: -45deg;
     bottom: -4px;
+    transition: .5s;
+}
+
+#chek5:not(:checked)~.iconomenu5 div:nth-child(3){
+    position: relative;
+    right: 7px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
+}
+
+#chek5:checked~.iconomenu5 div:nth-child(2){
+    position: relative;
+    right: 9px;
+    rotate: -45deg;
+    bottom: -4px;
+    transition: .5s;
+}
+
+#chek5:checked~.iconomenu5 div:nth-child(3){
+    position: relative;
+    right: -4px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
 }
 
 #chek5{
@@ -2912,19 +2997,36 @@ nav{
     margin-bottom: 3px;
 }
 
-.iconomenu6 div:nth-child(2){
+#chek6:not(:checked)~.iconomenu6 div:nth-child(2){
     position: relative;
-    right: 6px;
-    bottom: -10px;
-    rotate: 40deg;
-
-}
-
-.iconomenu6 div:nth-child(3){
-    position: relative;
-    right: -8px;
+    right: -5px;
     rotate: -45deg;
     bottom: -4px;
+    transition: .5s;
+}
+
+#chek6:not(:checked)~.iconomenu6 div:nth-child(3){
+    position: relative;
+    right: 7px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
+}
+
+#chek6:checked~.iconomenu6 div:nth-child(2){
+    position: relative;
+    right: 9px;
+    rotate: -45deg;
+    bottom: -4px;
+    transition: .5s;
+}
+
+#chek6:checked~.iconomenu6 div:nth-child(3){
+    position: relative;
+    right: -4px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
 }
 
 #chek6{
@@ -3036,19 +3138,36 @@ nav{
     margin-bottom: 3px;
 }
 
-.iconomenu7 div:nth-child(2){
+#chek7:not(:checked)~.iconomenu7 div:nth-child(2){
     position: relative;
-    right: 6px;
-    bottom: -10px;
-    rotate: 40deg;
-
-}
-
-.iconomenu7 div:nth-child(3){
-    position: relative;
-    right: -8px;
+    right: -5px;
     rotate: -45deg;
     bottom: -4px;
+    transition: .5s;
+}
+
+#chek7:not(:checked)~.iconomenu7 div:nth-child(3){
+    position: relative;
+    right: 7px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
+}
+
+#chek7:checked~.iconomenu7 div:nth-child(2){
+    position: relative;
+    right: 9px;
+    rotate: -45deg;
+    bottom: -4px;
+    transition: .5s;
+}
+
+#chek7:checked~.iconomenu7 div:nth-child(3){
+    position: relative;
+    right: -4px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
 }
 
 #chek7{
@@ -3142,19 +3261,36 @@ nav{
     margin-bottom: 3px;
 }
 
-.iconomenu8 div:nth-child(2){
+#chek8:not(:checked)~.iconomenu8 div:nth-child(2){
     position: relative;
-    right: 6px;
-    bottom: -10px;
-    rotate: 40deg;
-
-}
-
-.iconomenu8 div:nth-child(3){
-    position: relative;
-    right: -8px;
+    right: -5px;
     rotate: -45deg;
     bottom: -4px;
+    transition: .5s;
+}
+
+#chek8:not(:checked)~.iconomenu8 div:nth-child(3){
+    position: relative;
+    right: 7px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
+}
+
+#chek8:checked~.iconomenu8 div:nth-child(2){
+    position: relative;
+    right: 9px;
+    rotate: -45deg;
+    bottom: -4px;
+    transition: .5s;
+}
+
+#chek8:checked~.iconomenu8 div:nth-child(3){
+    position: relative;
+    right: -4px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
 }
 
 #chek8{
@@ -3247,19 +3383,36 @@ nav{
     margin-bottom: 3px;
 }
 
-.iconomenu9 div:nth-child(2){
+#chek9:not(:checked)~.iconomenu9 div:nth-child(2){
     position: relative;
-    right: 6px;
-    bottom: -10px;
-    rotate: 40deg;
-
-}
-
-.iconomenu9 div:nth-child(3){
-    position: relative;
-    right: -8px;
+    right: -5px;
     rotate: -45deg;
     bottom: -4px;
+    transition: .5s;
+}
+
+#chek9:not(:checked)~.iconomenu9 div:nth-child(3){
+    position: relative;
+    right: 7px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
+}
+
+#chek9:checked~.iconomenu9 div:nth-child(2){
+    position: relative;
+    right: 9px;
+    rotate: -45deg;
+    bottom: -4px;
+    transition: .5s;
+}
+
+#chek9:checked~.iconomenu9 div:nth-child(3){
+    position: relative;
+    right: -4px;
+    rotate: 45deg;
+    bottom: 2px;
+    transition: .5s;
 }
 
 #chek9{
