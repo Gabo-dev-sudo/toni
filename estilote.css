@@ -347,7 +347,7 @@ nav{
         scroll-snap-align: center;
         justify-items: center;
         padding: 1%;
-        width: 700px;
+        width: 600px;
         height: 1200px;
         text-align: center;
         padding-top: 70px;
@@ -363,7 +363,7 @@ nav{
     }
     
     .coachs .tony .img{
-        width:700px;
+        width:600px;
         text-align: center;
     }
     
@@ -399,7 +399,7 @@ nav{
         scroll-snap-align: center;
         justify-items: center;
         padding: 1%;
-        width: 700px;
+        width: 600px;
         height: 1200px;
         text-align: center;
         padding-top: 70px;
@@ -415,7 +415,7 @@ nav{
     }
     
     .coachs .fer .img{
-        width:700px;
+        width:600px;
         text-align: center;
     }
     
@@ -443,7 +443,7 @@ nav{
 
     @keyframes carruseloriginal{
         0%{
-            transform: translateX(-60vw);
+            transform: translateX(-200vw);
         }
 
 
@@ -709,7 +709,7 @@ nav{
     
     @keyframes carrusel{
         0%{
-            transform: translateX(-100vw);
+            transform: translateX(-300vw);
         }
     
     
