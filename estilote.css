@@ -485,7 +485,6 @@ nav{
         background-color: black;
         border: 1px solid white;
         border-radius: 40px;
-        opacity: .5;
         transition: .3s;
         scroll-snap-align: center;
         justify-items: center;
@@ -496,7 +495,6 @@ nav{
     }
     
     .campeones .titi:hover{
-        opacity: 1;
         transform: scale(1.07);
         transition: .3s;
         box-shadow: 5px 5px 15px red;
@@ -558,7 +556,6 @@ nav{
         background-color: black;
         border: 1px solid white;
         border-radius: 40px;
-        opacity: .5;
         transition: .3s;
         scroll-snap-align: center;
         justify-items: center;
@@ -569,7 +566,6 @@ nav{
     }
     
     .campeones .chuky:hover{
-        opacity: 1;
         transform: scale(1.07);
         transition: .3s;
         box-shadow: 5px 5px 15px red;
@@ -633,7 +629,6 @@ nav{
         background-color: black;
         border: 1px solid white;
         border-radius: 40px;
-        opacity: .5;
         transition: .3s;
         scroll-snap-align: center;
         justify-items: center;
@@ -644,7 +639,6 @@ nav{
     }
     
     .campeones .fer:hover{
-        opacity: 1;
         transform: scale(1.07);
         transition: .3s;
         box-shadow: 5px 5px 15px red;
