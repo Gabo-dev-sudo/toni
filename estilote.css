@@ -1332,16 +1332,10 @@ nav{
         font-size: 20px;
         margin-right: 40px;
         padding: 5px;
-        transition: .3s;
     }
 
     nav ul li a:hover{
-        border-style: solid;
-        border-color: rgb(242, 180, 66);
-        border-left: 0;
-        border-right: 0;
-        border-top: 0;
-        transition: .3s;
+        border-bottom: 2px solid rgb(242, 180, 66);
     }
 
 
