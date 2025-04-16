@@ -330,12 +330,21 @@ nav{
     .coachs::-webkit-scrollbar{
         display: none;
     }
+
+    .section5 .coachs:hover .tony:not(:hover){
+        filter: blur(2px);
+        opacity: .5;
+    }
+
+    .section5 .coachs:hover .fer:not(:hover){
+        filter: blur(2px);
+        opacity: .5;
+    }
     
     .coachs .tony{
         background-color: black;
         border: 1px solid white;
         border-radius: 40px;
-        opacity: .5;
         transition: .3s;
         scroll-snap-align: center;
         justify-items: center;
@@ -349,7 +358,6 @@ nav{
     }
     
     .coachs .tony:hover{
-        opacity: 1;
         transform: scale(1.07);
         transition: .3s;
         box-shadow: 5px 5px 15px red;
@@ -387,7 +395,6 @@ nav{
         background-color: black;
         border: 1px solid white;
         border-radius: 40px;
-        opacity: .5;
         transition: .3s;
         scroll-snap-align: center;
         justify-items: center;
@@ -401,7 +408,6 @@ nav{
     }
     
     .coachs .fer:hover{
-        opacity: 1;
         transform: scale(1.07);
         transition: .3s;
         box-shadow: 5px 5px 15px red;
@@ -458,6 +464,21 @@ nav{
 
     .campeones::-webkit-scrollbar{
         display: none;
+    }
+
+    .sectioncampeones .campeones:hover .titi:not(:hover){
+        filter: blur(2px);
+        opacity: .5;
+    }
+
+    .sectioncampeones .campeones:hover .chuky:not(:hover){
+        filter: blur(2px);
+        opacity: .5;
+    }
+
+    .sectioncampeones .campeones:hover .fer:not(:hover){
+        filter: blur(2px);
+        opacity: .5;
     }
     
     .campeones .titi{
