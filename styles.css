@@ -1,0 +1,766 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 5px;
+}
+
+html::-webkit-scrollbar-track{
+    border-radius: 30px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color:#2059bb;
+    border-radius: 30px;
+}
+
+body{
+    background-image:url(kids_on_tablets_in_class.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    z-index: 999;
+    container-type: scroll-state;
+    position: sticky;
+    top: 0;
+
+    nav{
+        @container scroll-state(stuck: top){
+            background-color: #ffe2cf;
+            transition: .3s;
+        }
+    }
+
+    .logo h3{
+        color: white;
+        @container scroll-state(stuck: top){
+            color: black;
+        }
+    }
+
+    .logo h3 span{
+        @container scroll-state(stuck: top){
+            color: #8f8e8e; 
+        }
+    }
+
+    nav .logo img{
+        @container scroll-state(stuck: top){
+            width: 5vw;
+            transition: .3s;
+        }
+    }
+
+    .redes i{
+        @container scroll-state(stuck: top){
+            color: black;
+            border: 1.5px solid black;
+        }
+    }
+    
+    .botonav i{
+        @container scroll-state(stuck: top){
+            color: black;
+        }
+    }
+
+    .apartados nav{
+        @container scroll-state(stuck: top){
+            margin-top: .1vh;
+        }
+    }
+
+}
+
+header nav{
+    width: 100%;
+    z-index: 2;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 70%;
+}
+
+.logo img{
+    width: 7vw;
+    transition: .3s;
+}
+
+.logo h3{
+    text-align: center;
+    transition: .3s;
+}
+
+.redes{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    border-right: 2px solid  #2059bb;
+    padding-top: 1vh;
+    padding-right: 50px;
+}
+
+.redes i{
+    font-size: 16px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    padding: 7px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+}
+
+
+.apartados{
+    width: 4%;
+    height: 100%;
+    margin-top: 7vh;
+
+}
+
+.apartados nav{
+    background-color: #2059bb;
+    position: absolute;
+    left: 0;
+    margin-top: 1vh;
+}
+
+.apartados nav .menu{
+    display: none;
+}
+
+.apartados nav .menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 2px;
+    color: white;
+}
+
+#chek{
+    display: none;
+}
+
+#chek:checked~nav .menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.botonav i{
+    transition: .2s;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+#chek:checked~.botonav i{
+    rotate: 180deg;
+    transition: .2s;
+}
+
+
+
+
+
+
+.presentacion{
+    width: 100%;
+    height: 100vh;
+}
+
+.capa .texto{
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+.texto h1{
+    margin-bottom: 4vh;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.texto h4{
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    font-size: 25px;
+}
+
+.texto a{
+    text-decoration: none;
+    padding: 15px 35px;
+}
+
+.texto a i{
+    color: white;
+    border: 1px solid white;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.texto a i:hover{
+    background-color: #2059bb;
+}
+
+.presentacion .capa {
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.capa2{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: .6;
+}
+
+
+
+
+
+
+.secform{
+    background-color: #ffe9e9;
+    width: 100%;
+    height: 90vh;
+    justify-items: center;
+    align-content: center;
+}
+
+.secform article{
+    width: 90%;
+    height: 85vh;
+    border-radius: 30px;
+    border: 2px solid black;
+    justify-items: center;
+    align-content: center;
+}
+
+.secform article .form{
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    gap: 5vw;
+}
+
+.form .formatofondo{
+    background: linear-gradient(to right, #e8ff76, #fbe5c8);
+    width: 40%;
+    justify-items: center;
+    align-content: center;
+    border-radius: 40px;
+}
+
+.form .formatofondo .formato{
+    background-color: white;
+    width: 80%;
+    height: 85%;
+    justify-items: center;
+    align-content: center;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form .formato img{
+    margin-bottom: 5vh;
+    transition: all .3s;
+}
+
+.form .formato img:hover{
+    filter: drop-shadow(5px 5px 5px red);
+}
+
+.form .requisitos{
+    width: 60%;
+    align-content: center;
+    align-items: center;
+}
+
+.form .requisitos p{
+    width: 95%;
+}
+
+.form .requisitos .descarga{
+    background-color: #fff6e8;
+    padding: 4vh 4vw;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 7vh;
+    justify-items: center;
+    box-shadow: 2px 0px 10px black;
+}
+
+.form .requisitos .completa{
+    background-color: #ebe2d4;
+    padding: 4vh 4vw;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 7vh;
+    justify-items: center;
+    box-shadow: 2px 0px 10px black;
+}
+
+.form .requisitos .entrega{
+    background-color: #ebd5b5;
+    padding: 4vh 4vw;
+    text-align: center;
+    border-radius: 20px;
+    justify-items: center;
+    box-shadow: 2px 0px 10px black;
+}
+
+
+
+
+.nuestras{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffe9e9;
+}
+
+.nuestras .contenido{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    justify-items: center;
+    align-content: end;
+}
+
+.contenido h1{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: -14vh;
+}
+
+.contenido .iconos{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.iconos div{
+    padding: 15px;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    top: -7vh;
+}
+
+.iconos i{
+    font-size: 60px;
+    color: white;
+}
+
+.contenido .cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.cards h2{
+    color: white;
+    padding: 10px;
+    border: 3px solid white;
+    margin-bottom: 2vh;
+    border-radius: 15px;
+    position: relative;
+    top: -7vh;
+}
+
+.cards p{
+    font-size: 20px;
+    width: 80%;
+    position: relative;
+    top: -5vh;
+}
+
+.cards .rincon{
+    background-color: #fff6e8;
+    border-radius: 30px;
+    width: 27%;
+    justify-items: center;
+    padding: 15px;
+    box-shadow: 2px 0px 10px black;
+}
+
+.cards .biblioteca{
+    background: linear-gradient(to right, #e8ff76, #fbe5c8);
+    border-radius: 30px;
+    width: 27%;
+    justify-items: center;
+    padding: 15px;
+    box-shadow: 2px 0px 10px black;
+}
+
+.cards .salon{
+    background: linear-gradient(to right, #e8ff76, #fbe5c8);
+    border-radius: 30px;
+    width: 27%;
+    justify-items: center;
+    padding: 15px;
+    box-shadow: 2px 0px 10px black;
+}
+
+.nuestras .fondo{
+    width: 100%;
+    height: 75vh;
+}
+
+.fondo .capa{
+    width: 100%;
+    height: 75vh;
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+}
+
+.fondo .img{
+    width: 100%;
+    height: 75vh;
+}
+
+.fondo .img img{
+    width: 100%;
+    height: 75vh;
+}
+
+.mapa{
+    width: 100%;
+    height: 90vh;
+    background-color: #ffe9e9;
+    justify-items: center;
+    align-content: center;
+}
+
+.mapa .map{
+    width: 90%;
+    height: 85vh;
+    border-radius: 30px;
+    border: 2px solid black;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.celebraciones-container{
+    width: 100%;
+    background-color: #ffe9e9;
+    padding-top: 15vh;
+    text-align: center;
+    justify-items: center;
+}
+
+.celebraciones-container h1{
+    background-color: #f07e63;
+    font-family: 'Chewy';
+    font-size: 50px;
+    width: 20%;
+}    
+
+.celebraciones-container .celebraciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.celebraciones div{
+    width: 320px;
+    margin-right: 10vw;
+    justify-items: center;
+}
+
+.celebraciones div:nth-child(3){
+    margin-right: 0;
+}
+
+.celebraciones div:nth-child(6){
+    margin-right: 0;
+}
+
+.celebraciones div h4{
+    width: 70%;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.celebraciones div img{
+    width: 100%;
+}
+
+
+
+.calendario img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.nuestro{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffe9e9;
+}
+
+.nuestro .contenido2{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    justify-items: center;
+    align-content: end;
+}
+
+.contenido2 .titulo{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -15vh;
+}
+
+.titulo h1{
+    color: white;
+    font-size: 40px;
+}
+
+.titulo i{
+    color: #979d79;
+    font-size: 50px;
+}
+
+.titulo span{
+    color: white;
+    font-size: 20px;
+}
+
+.contenido2 .cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.cards h2{
+    color: white;
+    padding: 10px;
+    border: 3px solid white;
+    margin-bottom: 2vh;
+    border-radius: 15px;
+    position: relative;
+    top: -7vh;
+}
+
+.cards ul{
+    width: 80%;
+    position: relative;
+    top: -5vh;
+}
+
+.cards .objetivos{
+    background-color:#979d79;
+    border-radius: 30px;
+    width: 27%;
+    justify-items: center;
+    padding: 15px;
+    box-shadow: 2px 0px 10px black;
+}
+
+.cards .ejes{
+    background-color: #979d79;
+    border-radius: 30px;
+    width: 27%;
+    justify-items: center;
+    padding: 15px;
+    box-shadow: 2px 0px 10px black;
+}
+
+.cards .logros{
+    background-color: #979d79;
+    border-radius: 30px;
+    width: 27%;
+    justify-items: center;
+    padding: 15px;
+    box-shadow: 2px 0px 10px black;
+}
+
+.nuestro .fondo{
+    width: 100%;
+    height: 75vh;
+}
+
+.fondo .capa{
+    width: 100%;
+    height: 75vh;
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+}
+
+.fondo .img{
+    width: 100%;
+    height: 75vh;
+}
+
+.fondo .img img{
+    width: 100%;
+    height: 75vh;
+}
+
+
+
+
+@media (max-width: 1000px){
+    body{
+        background-image:url(kids_on_tablets_in_class.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    header{
+        nav .logo img{
+            @container scroll-state(stuck: top){
+                width: 15vw;
+            }
+        }
+    }
+
+    .logo{
+        justify-content: start;
+    }
+
+    .logo img{
+        width: 20vw;
+        margin: 0;
+    }
+
+    .redes i{
+        font-size: 32px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .apartados{
+        width: 10%;
+        text-align: center;
+    }
+
+    .apartados .botonav i{
+        font-size: 40px;
+    }
+
+    .apartados nav .menu li{
+        padding: 25px;
+        border-bottom: 2px solid white;
+    }
+
+    .apartados nav .menu li:nth-child(4){
+        border-bottom: none;
+    }
+
+    .apartados nav .menu li a{
+        font-size: 40px;
+    }
+    
+    #chek:checked~nav .menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto a i{
+        border: 2px solid white;
+        font-size: 40px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .secform article .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form .formatofondo{
+        margin-bottom: 3vh;
+    }
+
+    .form .requisitos{
+        width: 100%;
+    }
+
+    .form .requisitos .descarga{
+        font-size: 30px;
+        margin: 0;
+        margin-bottom: 4%;
+    }
+    
+    .form .requisitos .completa{
+        font-size: 30px;
+        margin: 0;
+        margin-bottom: 4%;
+    }
+    
+    .form .requisitos .entrega{
+        font-size: 30px;
+        margin: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
