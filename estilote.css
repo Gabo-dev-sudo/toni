@@ -64,18 +64,23 @@ nav{
         display: none;
         background-color: black;
         position: absolute;
-        width: 100%;
+        right: 0;
+        width: 50%;
+        height: 100vh;
         top: 116px;
+        box-shadow: -50px 0px 50px;
     }
 
     nav ul{
+        height: 100%;
         text-align: center;
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
-    nav ul li{
-        margin-top: 60px;
-    }
+    
 
     nav ul li a{
         text-decoration: none;
@@ -86,10 +91,6 @@ nav{
 
     nav ul li a:hover{
         color: rgb(242, 180, 66);
-    }
-
-    nav ul li:nth-child(4){
-        margin-bottom: 60px ;
     }
 
     .boxlineas{
