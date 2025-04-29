@@ -1295,6 +1295,17 @@ nav{
     }
 
 
+
+
+
+    .ameca .peleas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
 }
 
 @media(min-width:1001px){
@@ -3000,6 +3011,7 @@ nav{
 
 
 
+
 .futbol{
     justify-items: center;
 }
@@ -3506,6 +3518,54 @@ nav{
 .menuaccesorios div{
     display: flex;
 }
+
+
+
+
+
+
+.ameca{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    align-content: center;
+}
+
+.ameca .peleas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.peleas .informaciones{
+    color: white;
+    display: flex;
+    gap: 30px;
+}
+
+.informaciones .fecha{
+    text-align: center;
+}
+
+.fecha span{
+    font-size: 4rem;
+}
+
+.subinformaciones{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subinformaciones .nombre-evento{
+    color: red;
+    font-size: 1.3rem;
+}
+
+.subinformaciones .organizador span{
+    color: rgb(1, 200, 1);
+}
+
 
 
 
