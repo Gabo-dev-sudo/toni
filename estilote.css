@@ -65,10 +65,9 @@ nav{
         background-color: black;
         position: absolute;
         right: 0;
-        width: 50%;
+        width: 60%;
         height: 90vh;
         top: 116px;
-        box-shadow: -50px 0px 50px;
     }
 
     nav ul{
@@ -1317,7 +1316,7 @@ nav{
     }
     
     .peleas video{
-        margin-top: 10%;
+        margin-top: 18%;
         width: 100%;
     }
     
