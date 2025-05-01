@@ -1311,7 +1311,7 @@ nav{
         width: 100%;
         height: 100vh;
         background-color: black;
-        padding-top: 18%;
+        padding-top: 7%;
     }
 
     .proximo .anuncio .capa{
@@ -1336,16 +1336,16 @@ nav{
     .content p{
         width: 80%;
         text-align: center;
-        font-size: 60px;
-        text-shadow: 5px 5px 15px red;
+        font-size: 100px;
+        text-shadow: 10px 10px 30px red;
         color: white;
     }
 
     .content h3{
         font-family: 'Chewy';
         color: red;
-        font-size: 40px;
-        text-shadow: 10px 10px 5px black;
+        font-size: 80px;
+        text-shadow: 20px 20px 10px black;
         animation-name: brinco;
         animation-duration: 1s;
         animation-timing-function: linear;
@@ -1355,7 +1355,7 @@ nav{
 
     .content a{
         text-decoration: none;
-        font-size: 20px;
+        font-size: 50px;
         background-color: red;
         padding: 10px 60px;
         color: black;
@@ -1400,7 +1400,7 @@ nav{
 
     .ameca{
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         background-color: black;
     }
     
