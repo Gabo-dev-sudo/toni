@@ -1309,14 +1309,14 @@ nav{
 
     .proximo{
         width: 100%;
-        height: 80vh;
+        height: 85vh;
         background-color: black;
         padding-top: 7%;
     }
 
     .proximo .anuncio .capa{
         width: 100%;
-        height: 80vh;
+        height: 85vh;
         position: absolute;
         background-color: black;
         opacity: .5;
@@ -1324,7 +1324,7 @@ nav{
 
     .proximo .anuncio .content{
         width: 100%;
-        height: 80vh;
+        height: 85vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2073,6 +2073,89 @@ nav{
     
     .subinformaciones .organizador span{
         color: rgb(1, 200, 1);
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .proximo{
+        width: 100%;
+        height: 80vh;
+        background-color: black;
+        padding-top: 5%;
+    }
+
+    .proximo .anuncio{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .proximo .anuncio .content{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1;
+    }
+
+    .content p{
+        width: 70%;
+        font-size: 40px;
+        text-align: center;
+        text-shadow: 10px 10px 10px red;
+        color: white;
+    }
+
+    .content h3{
+        font-family: 'Chewy';
+        color: red;
+        font-size: 30px;
+        text-shadow: 20px 20px 10px black;
+        animation-name: brinco;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .content a{
+        text-decoration: none;
+
+        background-color: red;
+        padding: 10px 60px;
+        color: black;
+        transition: .3s;
+        border-radius: 15px;
+    }
+
+    .content a:hover{
+        color: white;
+        transition: .3s;
+        transform: scale(1.1);
+    }
+
+    @keyframes brinco{
+        0%{
+        }
+
+        100%{
+            
+            transform: scale(1.2);
+        }
+    }
+
+    .proximo .anuncio img{
+        width: 50%;
+        height: 80vh;
     }
 
 
