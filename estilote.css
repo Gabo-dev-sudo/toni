@@ -97,7 +97,7 @@ body{
         display: flex;
         align-items: center;
         gap: 20px;
-        border-bottom: 1px solid white;
+        border-bottom: 0.5px solid white;
     }
 
     nav ul li a{
@@ -1360,13 +1360,15 @@ body{
     }
 
     .texto h3 {
-        font-size: 60px;
+        font-size: 70px;
         color:#FFA07A; ;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         font-weight: bold;
         margin-bottom: 20px;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
+        z-index: 3;
+        font-family: 'Anton';
     }
       
     .mensaje p{
@@ -1440,20 +1442,6 @@ body{
         opacity: .5;
         z-index: 1;
     }
-      
-    
-      
-    
-      
-      
-      
-      
-
-    
-
-
-
-    
 
     
 
