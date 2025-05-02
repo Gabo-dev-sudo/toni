@@ -41,7 +41,7 @@ body{
 }
 
 nav{
-    display: none;
+    
 }
 
 @media(max-width:1000px){ 
@@ -65,30 +65,52 @@ nav{
     }
 
     nav{
-        display: none;
+        transform: translateX(60vw);
         background-color: black;
         position: absolute;
         right: 0;
-        width: 60%;
-        height: 90vh;
+        width: 60vw;
+        height: 95vh;
         top: 116px;
+        transition: .4s;
+        align-content: end;
+        text-align: center;
+    }
+
+    nav::before{
+        content: "MENÚ";
+        font-size: 50px;
+        text-align: center;
+        color: white;
+        padding: 30px;
+        border-bottom: 2px solid red;
     }
 
     nav ul{
         height: 100%;
-        text-align: center;
         list-style: none;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    
+
+    nav ul li{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
 
     nav ul li a{
         text-decoration: none;
         color: white;
         font-size: 40px;
         transition: all .3s;
+        padding: 20px;
+    }
+
+    nav ul li i{
+        font-size: 50px;
+        color: white;
     }
 
     nav ul li a:hover{
@@ -103,6 +125,8 @@ nav{
     }
 
     #chekin:checked~nav{
+        transform: translateX(0vw);
+        transition: .4s;
         display: block;
     }
 
@@ -1466,6 +1490,10 @@ nav{
         list-style: none;
         display: flex;
         gap: 10px;
+    }
+
+    nav ul li i{
+        font-size: 0;
     }
 
     nav ul li a{
