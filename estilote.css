@@ -40,10 +40,6 @@ body{
     display: none;
 }
 
-nav{
-    
-}
-
 @media(max-width:1000px){ 
 
     /*Barra de navegacion responsive*/
@@ -97,6 +93,7 @@ nav{
     nav ul li{
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 20px;
     }
 
