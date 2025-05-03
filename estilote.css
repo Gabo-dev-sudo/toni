@@ -43,6 +43,11 @@ body{
 @media(max-width:1000px){ 
 
     /*Barra de navegacion responsive*/
+
+    body{
+        background-position-x: center;
+    }
+
     header{
         z-index: 50;
         width: 100%;
@@ -159,6 +164,7 @@ body{
         flex-direction: column-reverse;
         width: 100%;
         height: 90vh;
+        box-shadow: 0 0 50px black;
     }
 
     .section1 img{
@@ -1336,7 +1342,7 @@ body{
     .proximo {
         position: relative;
         width: 100vw;
-        height: 100vh;
+        height: 96vh;
         background-color: black;
         overflow: hidden;
     }
@@ -1346,22 +1352,25 @@ body{
         width: 100%;
         height: 100%;
         display: flex;
-        align-items: center;
+        align-items: end;
         justify-content: center;
     }
       
     .content {
+        width: 100%;
+        height: 40vh;
         position: absolute;
         text-align: center;
         z-index: 2;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        background-color: rgba(0, 0, 0, .8);
+        background: linear-gradient(to top, black, 80%, transparent);
+        align-content: end;
+        border: none;
     }
 
     .texto h3 {
-        font-size: 70px;
+        font-size: 80px;
         color:#FFA07A; ;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         font-weight: bold;
@@ -1373,7 +1382,7 @@ body{
     }
       
     .mensaje p{
-        font-size: 25px;
+        font-size: 35px;
         color: #FF0000;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         font-weight: bold;
@@ -1504,11 +1513,8 @@ body{
         color: rgb(1, 200, 1);
     }
 
-
-
-    
-
 }
+
 
 @media(min-width:1001px){
 
