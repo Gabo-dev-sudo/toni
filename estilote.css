@@ -208,7 +208,7 @@ body{
     }
      
     .redes .insta img{
-         width: 25%;
+         width: 30%;
          transition: .3s;
          border-radius: 15px;
          mask-image: none;
@@ -1562,13 +1562,72 @@ body{
         text-decoration: none;
         font-size: 20px;
         margin-right: 40px;
-        padding: 5px;
+        display: flex;
     }
 
-    nav ul li a:hover{
-        border-bottom: 2px solid rgb(242, 180, 66);
+    #inicio::after{
+        content: "";
+        background-color: rgb(242, 180, 66);
+        width: 0px;
+        height: 2.5px;
+        position: absolute;
+        top: 60px;
+        transition: all .3s ease-in-out;
+        transform: translateX(30px);
     }
 
+    #inicio:hover::after{
+        width: 65px;
+        transform: translateX(0);
+    }
+
+    #servicios::after{
+        content: "";
+        background-color: rgb(242, 180, 66);
+        width: 0px;
+        height: 2.5px;
+        position: absolute;
+        top: 60px;
+        transition: all .3s ease-in-out;
+        transform: translateX(50px);
+    }
+
+    #servicios:hover::after{
+        width: 100px;
+        transform: translateX(0);
+    }
+
+    #productos::after{
+        content: "";
+        background-color: rgb(242, 180, 66);
+        width: 0px;
+        height: 2.5px;
+        position: absolute;
+        top: 60px;
+        transition: all .3s ease-in-out;
+        transform: translateX(55px);
+    }
+
+    #productos:hover::after{
+        width: 115px;
+        transform: translateX(0);
+    }
+
+    #eventos::after{
+        content: "";
+        background-color: rgb(242, 180, 66);
+        width: 0px;
+        height: 2.5px;
+        position: absolute;
+        top: 60px;
+        transition: all .3s ease-in-out;
+        transform: translateX(45px);
+    }
+
+    #eventos:hover::after{
+        width: 90px;
+        transform: translateX(0);
+    }
 
 
 
