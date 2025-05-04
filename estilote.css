@@ -31,8 +31,8 @@ body{
 .boxlineas div{
     background-color: white;
     width: 50px;
-    height: 6px;
-    margin: 6px;
+    height: 5px;
+    margin: 7px;
     transition: .3s;
 }
 
@@ -73,10 +73,10 @@ body{
         width: 60vw;
         height: 95vh;
         top: 0;
+        margin-top: 5.9vh;
         transition: .4s;
         align-content: end;
         text-align: center;
-        margin-top: 6vh;
     }
 
     nav::before{
@@ -131,6 +131,11 @@ body{
         z-index: 60;
     }
 
+    .boxlineas:active{
+        transform: scale(1.2);
+        transition: all .3s ease-in-out;
+    }
+
     #chekin:checked~nav{
         transform: translateX(0vw);
         transition: .4s;
@@ -142,18 +147,19 @@ body{
         right: -1px;
         rotate: 45deg;
         transition: .3s;
+        bottom: -12px;
     }
 
     #chekin:checked~.boxlineas div:nth-child(2){
+        opacity: 0%;
+    }
+
+    #chekin:checked~.boxlineas div:nth-child(3){
         position: relative;
         right: 1px;
         top: -11px;
         rotate: -45deg;
         transition: .3s
-    }
-
-    #chekin:checked~.boxlineas div:nth-child(3){
-        opacity: 0%;
     }
 
 
@@ -195,7 +201,7 @@ body{
     }
 
     .redes .face img{
-        width: 25%;
+        width: 30%;
         transition: .3s;
         border-radius: 25px;
         mask-image: none;
@@ -221,7 +227,7 @@ body{
     }
      
     .redes .whats img{
-         width: 30%;
+         width: 35%;
          transition: .3s;
          border-radius: 25px;
          mask-image: none;
