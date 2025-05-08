@@ -407,7 +407,7 @@ body{
         }
     }
     
-    .coachs .fondo, .tony, .fer{
+    .coachs .fondo, .tony{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -417,7 +417,7 @@ body{
         align-items: center;
         border-radius: 30px;
         border: 1px solid white;
-        background-color: rgb(0, 0, 0);
+        backdrop-filter: blur(10px);
         transition: all .3s ease-in-out;
     }
 
@@ -430,18 +430,34 @@ body{
         box-shadow: 0px 0px 15px red;
     }
 
-    .coachs .fer:hover{
+
+
+    .coachs .fondo, .fern{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 30px;
+        border: 1px solid white;
+        backdrop-filter: blur(10px);
+        transition: all .3s ease-in-out;
+    }
+
+    .coachs .fern:hover{
         box-shadow: 0px 0px 15px red;
     }
 
-    .coachs .fer:hover img{
+    .coachs .fern:hover img{
         transform: scale(1.050);
         box-shadow: 0px 0px 15px red;
     }
     
     .coachs .fondo{
         transform: rotateY(90deg) translateZ(0px);
-        background-color: transparent;
+        backdrop-filter: none;
         border: none;
         animation: rotarlogo 5s infinite linear;
         box-shadow: none;
@@ -456,7 +472,7 @@ body{
         transform: rotate(0deg) translateZ(300px);
     }
     
-    .coachs .fer{
+    .coachs .fern{
         transform: rotate(0deg) rotateY(180deg) translateZ(300px);
     }
     
@@ -467,7 +483,7 @@ body{
         transition: all .3s ease-in-out;
     }
     
-    .coachs .fer img{
+    .coachs .fern img{
         width: 70%;
         height: 40%;
         border-radius: 50%;
@@ -540,7 +556,7 @@ body{
         }
     }
     
-    .campeones .fondo2, .titi, .chuky, .fer{
+    .campeones .fondo2, .titi, .chuky, .fern{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -550,7 +566,7 @@ body{
         align-items: center;
         border-radius: 30px;
         border: 1px solid white;
-        background-color: rgb(0, 0, 0);
+        backdrop-filter: blur(10px);
         transition: all .3s ease-in-out;
     }
 
@@ -572,11 +588,11 @@ body{
         box-shadow: 0px 0px 15px red;
     }
 
-    .campeones .fer:hover{
+    .campeones .fern:hover{
         box-shadow: 0px 0px 15px red;
     }
 
-    .campeones .fer:hover img{
+    .campeones .fern:hover img{
         transform: scale(1.050);
         box-shadow: 0px 0px 15px red;
     }
@@ -612,7 +628,7 @@ body{
         transform: rotateY(120deg) translateZ(300px);
     }
     
-    .campeones .fer{
+    .campeones .fern{
         transform: rotateY(240deg) translateZ(300px);
     }
     
@@ -630,7 +646,7 @@ body{
         transition: all .3s ease-in-out;
     }
     
-    .campeones .fer img{
+    .campeones .fern img{
         width: 65%;
         height: 37%;
         border-radius: 50%;
@@ -1749,7 +1765,7 @@ body{
         }
     }
     
-    .coachs .fondo, .tony, .fer{
+    .coachs .fondo, .tony{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -1759,7 +1775,7 @@ body{
         align-items: center;
         border-radius: 30px;
         border: 1px solid white;
-        background-color: rgb(0, 0, 0);
+        backdrop-filter: blur(10px);
         transition: all .3s ease-in-out;
     }
 
@@ -1772,18 +1788,32 @@ body{
         box-shadow: 0px 0px 15px red;
     }
 
-    .coachs .fer:hover{
+    .coachs .fern{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 30px;
+        border: 1px solid white;
+        backdrop-filter: blur(10px);
+        transition: all .3s ease-in-out;
+    }
+
+    .coachs .fern:hover{
         box-shadow: 0px 0px 15px red;
     }
 
-    .coachs .fer:hover img{
+    .coachs .fern:hover img{
         transform: scale(1.050);
         box-shadow: 0px 0px 15px red;
     }
     
     .coachs .fondo{
         transform: rotateY(90deg) translateZ(0px);
-        background-color: transparent;
+        backdrop-filter: none;
         border: none;
         animation: rotarlogo 5s infinite linear;
         box-shadow: none;
@@ -1798,7 +1828,7 @@ body{
         transform: rotate(0deg) translateZ(300px);
     }
     
-    .coachs .fer{
+    .coachs .fern{
         transform: rotate(0deg) rotateY(180deg) translateZ(300px);
     }
     
@@ -1809,7 +1839,7 @@ body{
         transition: all .3s ease-in-out;
     }
     
-    .coachs .fer img{
+    .coachs .fern img{
         width: 60%;
         height: 48%;
         border-radius: 50%;
@@ -1873,7 +1903,7 @@ body{
         }
     }
     
-    .campeones .fondo2, .titi, .chuky, .fer{
+    .campeones .fondo2, .titi, .chuky, .fern{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -1883,7 +1913,7 @@ body{
         align-items: center;
         border-radius: 30px;
         border: 1px solid white;
-        background-color: rgb(0, 0, 0);
+        backdrop-filter: blur(10px);
         transition: all .3s ease-in-out;
     }
 
@@ -1905,17 +1935,17 @@ body{
         box-shadow: 0px 0px 15px red;
     }
 
-    .campeones .fer:hover{
+    .campeones .fern:hover{
         box-shadow: 0px 0px 15px red;
     }
 
-    .campeones .fer:hover img{
+    .campeones .fern:hover img{
         transform: scale(1.050);
         box-shadow: 0px 0px 15px red;
     }
     
     .campeones .fondo2{
-        background-color: transparent;
+        backdrop-filter: none;
         border: none;
         animation: rotarlogo 5s infinite linear;
     }
@@ -1945,7 +1975,7 @@ body{
         transform: rotateY(120deg) translateZ(300px);
     }
     
-    .campeones .fer{
+    .campeones .fern{
         transform: rotateY(240deg) translateZ(300px);
     }
     
@@ -1963,7 +1993,7 @@ body{
         transition: all .3s ease-in-out;
     }
     
-    .campeones .fer img{
+    .campeones .fern img{
         width: 52%;
         height: 37%;
         border-radius: 50%;
