@@ -366,7 +366,7 @@ body{
     .section5{
         width: 100%;
         height: 95vh;
-        background-color: rgb(18, 16, 16);
+        background-color: black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -393,7 +393,7 @@ body{
     .coachs p{
         width: 80%;
         color: white;
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
     }
     
@@ -498,7 +498,7 @@ body{
     .sectioncampeones{
         width: 100%;
         height: 95vh;
-        background-color: rgb(18, 16, 16);
+        background-color: black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -526,7 +526,7 @@ body{
     .campeones p{
         width: 80%;
         color: white;
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
     }
     
