@@ -350,8 +350,8 @@ body{
 }
 
 .card-niños .card-niños-front .titulon, .card-adultos .card-adultos-front .tituloa{
-    background-color: rgba(242, 180, 66, .6);
-    height: 15%;
+    background: linear-gradient(to top, rgba(242, 180, 66, 1), 70%, transparent);
+    height: 20%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     justify-items: center;
@@ -380,7 +380,6 @@ body{
 
 .card-niños-back ul, .card-adultos-back ul{
     font-size: 200%;
-    list-style: none;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -554,11 +553,11 @@ body{
     }
     
     .coachs .tony{
-        transform: rotate(0deg) translateZ(300px);
+        transform: rotate(0deg) translateZ(250px);
     }
     
     .coachs .fern{
-        transform: rotate(0deg) rotateY(180deg) translateZ(300px);
+        transform: rotate(0deg) rotateY(180deg) translateZ(250px);
     }
     
     .coachs .tony img{
@@ -1752,7 +1751,7 @@ body{
    }
      
     .eslogan h1{
-        font-size: 70px;
+        font-size: 5vw;
         font-style: italic;
         color: white;
         text-align: center;
@@ -1761,7 +1760,7 @@ body{
     }
     
     .eslogan p{
-        font-size: 20px;
+        font-size: 1.5vw;
         color: white;
         text-align: center;
         background-color: orange;
@@ -1822,8 +1821,8 @@ body{
 }
 
 .card-niños .card-niños-front .titulon, .card-adultos .card-adultos-front .tituloa{
-    background-color: rgba(242, 180, 66, .6);
-    height: 15%;
+    background: linear-gradient(to top, rgba(242, 180, 66, 1), 70%, transparent);
+    height: 20%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     justify-items: center;
@@ -1849,7 +1848,6 @@ body{
 }
 
 .card-niños-back ul, .card-adultos-back ul{
-    list-style: none;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -2001,11 +1999,11 @@ body{
     }
     
     .coachs .tony{
-        transform: rotate(0deg) translateZ(300px);
+        transform: rotate(0deg) translateZ(250px);
     }
     
     .coachs .fern{
-        transform: rotate(0deg) rotateY(180deg) translateZ(300px);
+        transform: rotate(0deg) rotateY(180deg) translateZ(250px);
     }
     
     .coachs .tony img{
@@ -2273,6 +2271,41 @@ body{
         height: 85vh;
         mask-image: linear-gradient(to left, black, transparent);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
